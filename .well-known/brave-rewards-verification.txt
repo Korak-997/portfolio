@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: korak-997.github.io
+Token: dc6c6d958a75b0cefa2b5adf494616d2fbe87f8de7b9bf7ca200d16e91cecd8b
