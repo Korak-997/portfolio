@@ -3,6 +3,28 @@ module.exports = {
 	plugins: [require('daisyui')],
 
 	daisyui: {
-		themes: ['business']
+		themes: [
+			{
+				dark: {
+					primary: '#7ed957',
+
+					secondary: '#00667A',
+
+					accent: '#00A48C',
+
+					neutral: '#201726',
+
+					'base-100': '#212121',
+
+					info: '#71bee5',
+
+					success: '#79eca5',
+
+					warning: '#a0590e',
+
+					error: '#f45048'
+				}
+			}
+		]
 	}
 };

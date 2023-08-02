@@ -5,7 +5,7 @@
 
 <div class="app">
 	<Navbar/>
-  <main>
+  <main class="flex items-center justify-center flex-col">
 		<slot />
 	</main>
 </div>
