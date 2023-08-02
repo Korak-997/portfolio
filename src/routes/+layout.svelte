@@ -1,11 +1,11 @@
 <script>
-	import './styles.css';
-  import Navbar from '../components/Navbar.svelte';
+	import '../app.scss';
+	import Navbar from '../components/Navbar.svelte';
 </script>
 
 <div class="app">
-	<Navbar/>
-  <main class="flex items-center justify-center flex-col">
+	<Navbar />
+	<main class="flex items-center justify-center flex-col">
 		<slot />
 	</main>
 </div>
