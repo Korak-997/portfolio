@@ -1,5 +1,5 @@
 <script>
-	import skills from '../store/skills.js';
+	import skills from '../../store/skills.js';
 
 	let icons;
 	skills.subscribe((data) => {

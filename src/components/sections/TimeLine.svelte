@@ -1,6 +1,6 @@
 <script>
 
-	import timeline from '../store/timeline.js';
+	import timeline from '../../store/timeline.js';
 	let stories;
 	timeline.subscribe((data) => {
 		stories = data;
