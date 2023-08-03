@@ -15,11 +15,6 @@ const socials = writable([
     title: 'Youtube',
     url: 'https://www.youtube.com/channel/UC9j6pieJxlXmpq0k7kV1VDg',
     icon: 'mdi:youtube'
-  },
-  {
-    title: 'Grepper',
-    url: 'https://www.grepper.com/profile/korak-kurani',
-    icon: false
   }
 ]);
 
