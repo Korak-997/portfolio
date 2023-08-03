@@ -7,7 +7,7 @@
 	});
 </script>
 
-<div class="timeline my-4">
+<div class="timeline shadow-xl w-11/12 p-4 my-4">
 	<div class="container">
 		{#each stories as story}
 			<div class="timeline-item my-4">

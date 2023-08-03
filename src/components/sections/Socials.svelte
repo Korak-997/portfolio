@@ -7,7 +7,7 @@
 	});
 </script>
 
-<div>
+<div class="shadow-xl w-11/12 p-4 my-4">
 	<h1 class="text-primary font-bold text-4xl md:text-6xl p-2">Reach Out</h1>
 	<div class="flex items-center justify-around flex-wrap">
 		{#each socials as account}

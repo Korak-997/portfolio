@@ -1,9 +1,7 @@
 <script>
-	import typeVFX from '$lib/writing.mp3';
-	import { onMount } from 'svelte';
 </script>
 
-<div>
+<div class="shadow-xl">
 	<h1
 		class="text-primary font-bold border-r-2 border-primary mx-auto whitespace-nowrap overflow-hidden text-2xl md:text-6xl p-2"
 	>
