@@ -13,8 +13,8 @@
 			<div class="timeline-item my-4">
 				<div class="timeline-img" />
 				<div class="timeline-content shadow-xl rounded-md">
+          <div class="bg-secondary p-2 font-bold text-center">{story.date}</div>
 					<h2 class="m-4 font-bold text-2xl">{story.title}</h2>
-					<div class="date bg-secondary inline-block absolute p-2 font-bold">{story.date}</div>
 					<p class="m-4">{story.des}</p>
 				</div>
 			</div>
@@ -47,18 +47,6 @@
 					right: auto;
 					left: 0;
 				}
-
-				&::after {
-					content: '';
-					position: absolute;
-					border-style: solid;
-					width: 0;
-					height: 0;
-					top: 20px;
-					left: -15px;
-					border-width: 10px 15px 10px 0;
-					border-color: transparent #00667a transparent transparent;
-				}
 			}
 		}
 
@@ -73,18 +61,6 @@
 		position: relative;
 		width: 45%;
 		padding: 10px 30px;
-
-		&::after {
-			content: '';
-			position: absolute;
-			border-style: solid;
-			width: 0;
-			height: 0;
-			top: 20px;
-			right: -15px;
-			border-width: 10px 0 10px 15px;
-			border-color: transparent transparent transparent #00667a;
-		}
 	}
 
 	.timeline-img {
@@ -96,10 +72,6 @@
 		left: 50%;
 		margin-top: 25px;
 		margin-left: -15px;
-	}
-	.date {
-		top: 0;
-		right: 0;
 	}
 
 	@media screen and (max-width: 768px) {
