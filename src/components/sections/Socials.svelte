@@ -9,101 +9,78 @@
 
 <div class="w-11/12 p-4 my-4">
 	<h1 class="text-primary font-bold text-4xl md:text-6xl p-2 mb-10">Reach Out</h1>
-	<ul class="flex items-center justify-around flex-wrap">
+	<div class="flex justify-around items-center flex-wrap">
 		{#each socials as social}
-			<li class="list-none my-6">
-				<a
-					href={social.url}
-					target="_blank"
-					class="w-48 h-16 decoration-none bg-secondary text-left flex items-center justify-center
-          shadow-xl
-          "
-				>
-					<Icon icon={social.icon} class="text-6xl text-neutral-50" />
-					<p class="text-2xl font-bold text-neutral-50">{social.title}</p>
-				</a>
-			</li>
+			<a
+				href={social.url}
+				target="_blank"
+				class="w-48 h-16 button text-secondary flex items-center justify-center text-2xl font-bold my-2 p-2"
+			>
+				<Icon icon={social.icon} class="text-6xl" />
+				{social.title}
+			</a>
 		{/each}
-	</ul>
+	</div>
 </div>
 
 <style lang="scss">
-	li {
-		a {
-			transition: 0.5s;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 10px;
-				left: -20px;
-				height: 100%;
-				width: 20px;
-				background: #00667a;
-				transform: 0.5s;
-				transform: rotate(0deg) skewY(-45deg);
-			}
-			&:after {
-				content: '';
-				position: absolute;
-				bottom: -20px;
-				left: -10px;
-				height: 20px;
-				width: 100%;
-				background: #00667a;
-				transform: 0.5s;
-				transform: rotate(0deg) skewX(-45deg);
-			}
-			&:hover {
-				transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-				box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+	.button {
+		position: relative;
+		background-color: transparent;
+		cursor: pointer;
+		border: 2px solid #252525;
+		overflow: hidden;
+		border-radius: 30px;
+		transition: all 0.5s ease-in-out;
+		p {
+			z-index: 1;
+			font-weight: 800;
+			letter-spacing: 4px;
+		}
+		&:nth-child(1) {
+			&::after {
+				background-color: #000000;
 			}
 		}
-		&:hover:nth-child(1) a {
-			background: #000000;
-			&:before {
-				background: #000000;
-			}
-			&:after {
-				background: #000000;
-			}
-		}
-		&:hover:nth-child(2) a {
-			background: linear-gradient(
-				45deg,
-				#f09433 0%,
-				#e6683c 25%,
-				#dc2743 50%,
-				#cc2366 75%,
-				#bc1888 100%
-			);
-			&:before {
+
+		&:nth-child(2) {
+			&::after {
 				background: linear-gradient(
 					45deg,
 					#f09433 0%,
 					#e6683c 25%,
-					#dc2743 50%,
-					#cc2366 75%,
-					#bc1888 100%
-				);
-			}
-			&:after {
-				background: linear-gradient(
-					45deg,
-					#f09433 0%,
-					#e6683c 25%,
-					#dc2743 50%,
-					#cc2366 75%,
+					#dc2743 55%,
+					#cc2366 90%,
 					#bc1888 100%
 				);
 			}
 		}
-		&:hover:nth-child(3) a {
-			background: #cd201f;
-			&:before {
-				background: #cd201f;
+
+		&:nth-child(3) {
+			&::after {
+				background-color: #cd201f;
 			}
-			&:after {
-				background: #cd201f;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: all 0.5s ease-in-out;
+			border-radius: 30px;
+			visibility: hidden;
+			height: 10px;
+			width: 10px;
+			z-index: -1;
+		}
+
+		&:hover {
+			box-shadow: 1px 1px 200px #252525;
+			color: #fff;
+			border: none;
+			&::after {
+				visibility: visible;
+				transform: scale(100) translateX(2px);
 			}
 		}
 	}
