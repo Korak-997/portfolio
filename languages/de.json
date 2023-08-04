@@ -1,4 +1,10 @@
 {
+  "common":{
+    "locale":{
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
 	"intro": {
 		"title": "Programmieren ist ein Hobby, keine Arbeit!"
 	},
