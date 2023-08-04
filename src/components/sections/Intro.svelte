@@ -1,11 +1,12 @@
 <script>
+	import { i } from '@inlang/sdk-js';
 </script>
 
 <div class="shadow-xl">
 	<h1
 		class="text-primary font-bold border-r-2 border-primary mx-auto whitespace-nowrap overflow-hidden text-2xl md:text-6xl p-2"
 	>
-		Coding is hobby not work !
+		{i("intro.title")}
 	</h1>
 </div>
 

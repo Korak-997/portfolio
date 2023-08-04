@@ -1,5 +1,5 @@
 <script>
-
+	import { i } from '@inlang/sdk-js';
 	import timeline from '../../store/timeline.js';
 	let stories;
 	timeline.subscribe((data) => {
@@ -14,8 +14,8 @@
 				<div class="timeline-img" />
 				<div class="timeline-content shadow-xl rounded-md">
           <div class="bg-secondary p-2 font-bold text-center">{story.date}</div>
-					<h2 class="m-4 font-bold text-2xl">{story.title}</h2>
-					<p class="m-4">{story.des}</p>
+					<h2 class="m-4 font-bold text-2xl">{i(`${story.title}`)}</h2>
+					<p class="m-4">{i(`${story.des}`)}</p>
 				</div>
 			</div>
 		{/each}

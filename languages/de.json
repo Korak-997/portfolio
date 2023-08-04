@@ -1,3 +1,45 @@
 {
-  "welcome": "Willkommen bei inlang"
+	"intro": {
+		"title": "Programmieren ist ein Hobby, keine Arbeit!"
+	},
+	"timeline": {
+		"first": {
+			"title": "Geboren",
+			"des": "Geboren und aufgewachsen in der Stadt Al-Sulaimanya im irakischen Kurdistan"
+		},
+		"second": {
+			"title": "Abitur Abgeschlossen",
+			"des": "Abgeschlossenes Abitur in der Stadt Al-Sulaimanya im irakischen Kurdistan"
+		},
+		"third": {
+			"title": "Das Land verlassen",
+			"des": "In 2016 verließte ich das Land auf der Suche nach einer besseren und sichereren Zukunft"
+		},
+		"fourth": {
+			"title": "In Deutschland angekommen",
+			"des": "Im August 2018 bin ich endlich in Deutschland angekommen."
+		},
+		"fifth": {
+			"title": "Deutsche Sprache lernen",
+			"des": "Ich habe direkt in den Jahren 2018-2020 mit dem Erlernen der deutschen Sprache begonnen und ein Zertifikat der Stufe B2 erhalten"
+		},
+		"sixth": {
+			"title": "Die Reise des selbst gelernte Entwicklers hat begonnen",
+			"des": "Parallel zu meinem Deutschkurs habe ich angefangen, selbst Programmieren zu lernen"
+		},
+		"seventh": {
+			"title": "Ausbildung begonnen",
+			"des": "Im August 2020 habe ich meine Ausbildung als Fachinformatiker-Anwendungsentwicklung begonnen"
+		},
+		"eighth": {
+			"title": "Einen YOUTUBE-Kanal eröffnet",
+			"des": "In meinem Heimatland gibt es fast keine Ressourcen zum Programmieren oder Codieren in kurdischer Sprache. Deswegen habe ich mich entschieden um einen YOUTUBE-Kanal zu offenen um meine kentnisse und erfahrungen mit personen aus mein Heimatland zu teilen."
+		}
+	},
+	"skills": {
+		"title": "Fähigkeiten"
+	},
+	"reachout": {
+		"title": "Kontaktieren"
+	}
 }

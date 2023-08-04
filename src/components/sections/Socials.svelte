@@ -1,6 +1,8 @@
 <script>
 	import socialLinks from '../../store/socials.js';
 	import Icon from '@iconify/svelte';
+	import { i } from '@inlang/sdk-js';
+
 	let socials;
 	socialLinks.subscribe((data) => {
 		socials = data;
@@ -8,7 +10,7 @@
 </script>
 
 <div class="w-11/12 p-4 my-4">
-	<h1 class="text-primary font-bold text-4xl md:text-6xl p-2 mb-10">Reach Out</h1>
+	<h1 class="text-primary font-bold text-4xl md:text-6xl p-2 mb-10">{i('socials.title')}</h1>
 	<div class="flex justify-around items-center flex-wrap">
 		{#each socials as social}
 			<a

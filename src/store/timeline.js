@@ -2,40 +2,53 @@ import { writable } from 'svelte/store';
 
 const skills = writable([
 	{
-    title: "Born",
+    key: "first",
+    title: "timeline.first.title",
     date: "18-03-1997",
-    des: "Born and raised in the city of Al-Sulaimanya in the iraqi kurdistan"
+    des: "timeline.first.des"
   },
   {
-    title: "Finished Highschool",
+    key: "second",
+    title: "timeline.second.title",
     date: "2015",
-    des: "Finished Highschool in the city of Al-Sulaimanya in the iraqi kurdistan"
+    des: "timeline.second.des"
   },
   {
-    title: "Left the country",
+    key: "third",
+    title: "timeline.third.title",
     date: "2016",
-    des: "Left the country in 2016 searching for a brighter and safer future"
+    des: "timeline.third.des"
   },
   {
-    title: "Arrived in Germany",
+    key: "fourth",
+    title: "timeline.fourth.title",
     date: "08/2018",
-    des: "In August 2018 i finally arrived in Germany."
+    des: "timeline.fourth.des"
   },
   {
-    title: "Learning German language",
+    key: "fifth",
+    title: "timeline.fifth.title",
     date: "2018-2020",
-    des: "I directly started learning German language in 2018-2020 and received level B2 certificate"
+    des: "timeline.fifth.des"
   },
   {
-    title: "Self-taught developer journey started",
+    key: "sixth",
+    title: "timeline.sixth.title",
     date: "2019",
-    des: "Alongside my german language course i started learning Coding and Programming by myself"
+    des: "timeline.sixth.des"
   },
   {
-    title: "Started Apprenticeship",
+    key: "seventh",
+    title: "timeline.seventh.title",
     date: "08-2020",
-    des: "August 2020 i started my apprenticeship in the field of as a Software Developer"
+    des: "timeline.seventh.des"
   },
+  {
+    key: "eighth",
+    title: "timeline.eighth.title",
+    date: "13-02-2021",
+    des: "timeline.eighth.des"
+  }
 ]);
 
 export default skills;
