@@ -2,6 +2,7 @@
 	import { switchLanguage } from '@inlang/sdk-js';
 	import { i } from '@inlang/sdk-js';
 	import { language } from '@inlang/sdk-js';
+  import Icon from '@iconify/svelte';
 
 	const switchLang = async (newLang) => await switchLanguage(newLang);
 	let supportedLangs = ['de', 'en'];
@@ -14,12 +15,12 @@
 		<button
 			on:click={() => (showSelector = !showSelector)}
 			type="button"
-			class="btn btn-circle hover:cursor-pointer"
+			class="btn btn-ghost btn-circle hover:cursor-pointer hover:btn-primary text-4xl"
 			id="menu-button"
 			aria-expanded="true"
 			aria-haspopup="true"
 		>
-			<img src={`src/lib/assets/flags/${currentLang}.png`} class="w-full rounded-full" />
+      <Icon icon="mdi:language"/>
 		</button>
 	</div>
 	<div
@@ -30,23 +31,23 @@
 		tabindex="-1"
 	>
 		<div
-			class="flex flex-col items-center justify-center w-48 bg-base-300 p-2 rounded-md"
+			class="flex flex-col items-center justify-center w-48"
 			role="none"
 			class:hidden={showSelector === false}
 		>
 			{#each supportedLangs as lang}
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
 				<div
 					class:bg-secondary={lang === currentLang}
-					class="p-2 m-1 rounded-full w-full flex justify-between items-center"
+					class="p-2 gap-2 rounded-full hover:cursor-pointer hover:bg-accent"
 					on:click={() => {
 						currentLang = lang;
 						switchLang(lang);
 						showSelector = false;
 					}}
 				>
-					<img src={`src/lib/assets/flags/${lang}.png`} class="w-10 rounded-full" />
-					<p class="text-xl font-bold">{i(`common.locale.${lang}`)}</p>
+					<p class="text-2xl font-bold">{i(`common.locale.${lang}`)}</p>
 				</div>
 			{/each}
 		</div>
