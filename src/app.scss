@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+  font-family:'vina';
+  src: url('../static/VinaSans.ttf');
+}
+
+body{
+  overflow-x: hidden;
+}
