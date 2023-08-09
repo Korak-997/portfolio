@@ -1,0 +1,13 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family:'vina';
+  src: url('../static/VinaSans.ttf');
+}
+
+body{
+  overflow-x: hidden;
+}

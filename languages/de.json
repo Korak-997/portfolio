@@ -1,0 +1,52 @@
+{
+  "construction":"Meine Website befindet sich derzeit in Weiterentwicklung, wobei es zu Problemen führen kann",
+  "common":{
+    "locale":{
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+	"intro": {
+		"intro": {
+      "hi": "Hi",
+      "iam": "Ich bin",
+      "korak": "Korak"
+    }
+	},
+	"timeline": {
+		"first": {
+			"title": "Herkunft",
+			"des": "geboren und aufgewachsen in der Stadt Al-Sulaimanya im irakischen Kurdistan"
+		},
+		"second": {
+			"title": "Heimat verlassen",
+			"des": "auf der Suche nach einer besseren Zukunftsperspektive"
+		},
+		"third": {
+			"title": "Ankunft in Deutschland",
+			"des": ""
+		},
+		"fourth": {
+			"title": "Absolvierung eines Deutsch-Kurses",
+			"des": "Abschlusszertifikat B2 Niveau"
+		},
+		"fifth": {
+			"title": "Beginn Selbststudium als Entwickler",
+			"des": "Parallel zu meinem Deutschkurs habe ich mir das Programmieren selbst angeeignet."
+		},
+		"sixth": {
+			"title": "Ausbildungsbeginn",
+			"des": "im August 2020 Ausbildung zum Fachinformatiker-Anwendungsentwicklung begonnen"
+		},
+		"seventh": {
+			"title": "Entstehung meines YOUTUBE-Kanals",
+			"des": "mit dem Ziel, die Menschen in meinem Heimatland mit meinen Kenntnissen und Erfahrungen zu unterstutzen"
+		}
+	},
+	"skills": {
+		"title": "Fähigkeiten"
+	},
+	"reachout": {
+		"title": "Kontaktieren"
+	}
+}
