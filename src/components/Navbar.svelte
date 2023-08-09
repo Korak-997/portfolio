@@ -9,7 +9,4 @@
 		<Logo />
 	</div>
 	<LanguagePicker />
-	<div class="alert alert-error w-96">
-		<span class="font-bold">{i(`construction`)} 🙁 🙏</span>
-	</div>
 </div>
