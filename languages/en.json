@@ -1,51 +1,49 @@
 {
-  "common":{
-    "locale":{
+  "common": {
+    "locale": {
       "en": "English",
       "de": "Deutsch"
     }
   },
-	"intro": {
-		"title": "Coding is hobby not work!"
-	},
-	"timeline": {
-		"first": {
-			"title": "Born",
-			"des": "Born and raised in the city of Al-Sulaimanya in the iraqi kurdistan"
-		},
-		"second": {
-			"title": "Finished Highschool",
-			"des": "Finished Highschool in the city of Al-Sulaimanya in the iraqi kurdistan"
-		},
-		"third": {
-			"title": "Left the country",
-			"des": "Left the country in 2016 searching for a brighter and safer future"
-		},
-		"fourth": {
-			"title": "Arrived in Germany",
-			"des": "In August 2018 i finally arrived in Germany."
-		},
-		"fifth": {
-			"title": "Learning German language",
-			"des": "I directly started learning German language in 2018-2020 and received level B2 certificate"
-		},
-		"sixth": {
-			"title": "Self-taught developer journey started",
-			"des": "Alongside my german language course i started learning Coding and Programming by myself"
-		},
-		"seventh": {
-			"title": "Started Apprenticeship",
-			"des": "August 2020 i started my apprenticeship as a Software Developer"
-		},
-		"eighth": {
-			"title": "Opened a YOUTUBE channel",
-			"des": "In my home country there almost no resources about Programming or coding in Kurdish language. Thats why i decided to open a YOUTUBE channel (Link you find it social section) in order to share my knowledge and help people who are interested in programming find useful and easy resources to learn and start their journey in this field."
-		}
-	},
-	"skills": {
-		"title": "Skills"
-	},
-	"socials": {
-		"title": "Reach out"
-	}
+  "intro": {
+    "hi": "Hi",
+    "iam": "I am",
+    "korak": "Korak"
+  },
+  "timeline": {
+    "first": {
+      "title": "Origin",
+      "des": "born and raised in the city of Al-Sulaimanya in Iraqi Kurdistan"
+    },
+    "second": {
+      "title": "leaving home",
+      "des": "looking for a better future perspective"
+    },
+    "third": {
+      "title": "arrival in Germany",
+      "des": ""
+    },
+    "fourth": {
+      "title": "Completion of a German course",
+      "des": "certificate B2 level"
+    },
+    "fifth": {
+      "title": "Start self-study as a developer",
+      "des": "Parallel to my German course, I learned how to program myself."
+    },
+    "sixth": {
+      "title": "start of Apprenticeship",
+      "des": "in August 2020 started my Apprenticeship as a Software developer"
+    },
+    "seventh": {
+      "title": "Creation of my YOUTUBE channel",
+      "des": "with the aim of supporting the people in my home country with my knowledge and experience"
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "reachout": {
+    "title": "Reach out"
+  }
 }
