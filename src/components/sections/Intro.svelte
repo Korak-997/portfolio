@@ -22,6 +22,9 @@
 	$time: 14s;
 	$base-hue: 150;
 
+  h1{
+    text-shadow: -1px -1px 8px #7ed957;
+  }
   .intro-text{
     font-family: "vina";
     font-size: 6rem;
