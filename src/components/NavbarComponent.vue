@@ -1,4 +1,5 @@
 <script>
+  import Logo from "./Logo.vue";
   import LanguagePicker from "../components/LanguagePicker.vue";
 
   export default {
@@ -6,6 +7,7 @@
     data() {},
 
     components: {
+      Logo,
       LanguagePicker,
     },
 
@@ -13,5 +15,10 @@
   };
 </script>
 <template>
-  <LanguagePicker />
+  <div class="w-full flex justify-around items-center my-4 flex-wrap gap-2">
+    <div class="w-12">
+      <Logo />
+    </div>
+    <LanguagePicker />
+  </div>
 </template>

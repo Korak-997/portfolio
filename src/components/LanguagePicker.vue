@@ -63,7 +63,7 @@
             alt="Country flag"
             class="w-6 rounded-xl"
           />
-          {{ t(`locale.${sLocale}`) }}
+          {{ t(`common.locale.${sLocale}`) }}
         </p>
       </li>
     </ul>
