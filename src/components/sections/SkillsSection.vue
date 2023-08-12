@@ -3,7 +3,7 @@
     name: "Skills",
     data() {
       return {
-        skills: import.meta.glob("@/assets/skillIcons/*.svg"),
+        skills: import.meta.glob("@/assets/icons/*.svg"),
       };
     },
     methods: {},
