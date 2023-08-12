@@ -14,11 +14,13 @@
       {{ $t("skills.title") }}
     </h1>
 
-    <div class="flex items-center justify-around flex-wrap gap-4">
+    <div
+      class="flex items-center justify-around flex-wrap gap-4 bg-slate-100 p-6"
+    >
       <img
         v-for="num in numbers"
         :key="num"
-        class="w-20"
+        class="md:w-36 w-24"
         :src="`/icons/${num}.svg`"
         alt="skill logo"
       />
