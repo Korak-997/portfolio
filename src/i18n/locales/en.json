@@ -4,14 +4,15 @@
     "locale": {
       "en": "English",
       "de": "Deutsch"
-    }
+    },
+    "reachout": "Reach Out"
   },
   "intro": {
-    "hi": "Hi",
-    "iam": "I am",
-    "korak": "Korak"
+    "hi": "Hi i am Korak",
+    "coding": "Coding is my passion not job!"
   },
   "timeline": {
+    "title": "My Life Timeline",
     "first": {
       "title": "Origin",
       "des": "born and raised in the city of Al-Sulaimanya in Iraqi Kurdistan"

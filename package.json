@@ -8,7 +8,6 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-
     "@intlify/unplugin-vue-i18n": "^0.8.1",
     "autoprefixer": "^10.4.12",
     "vue": "^3.2.37",
@@ -27,6 +26,7 @@
     "eslint-plugin-vue": "^9.0.0",
     "postcss": "^8.4.7",
     "prettier": "^2.5.1",
+    "sass": "^1.65.1",
     "tailwindcss": "^3.0.23",
     "vite": "^3.0.1"
   }
