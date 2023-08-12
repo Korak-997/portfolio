@@ -3,10 +3,9 @@
     name: "Skills",
     data() {
       return {
-        skills: import.meta.glob("@/assets/icons/*.svg"),
+        numbers: Array.from({ length: 19 }, (value, index) => index + 1),
       };
     },
-    methods: {},
   };
 </script>
 <template>
@@ -14,12 +13,13 @@
     <h1 class="text-primary font-bold text-4xl md:text-6xl p-2">
       {{ $t("skills.title") }}
     </h1>
+
     <div class="flex items-center justify-around flex-wrap gap-4">
       <img
-        v-for="(idx, icon) in skills"
-        :key="idx"
+        v-for="num in numbers"
+        :key="num"
         class="w-20"
-        :src="icon"
+        :src="`/icons/${num}.svg`"
         alt="skill logo"
       />
     </div>
