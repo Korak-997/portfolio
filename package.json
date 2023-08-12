@@ -1,0 +1,35 @@
+{
+  "name": "korak-kurani-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "deploy": "sh deploy.sh",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
+    "autoprefixer": "^10.4.12",
+    "vue": "^3.2.37",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.2",
+    "vue-uuid": "^3.0.0",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@iconify/svelte": "^3.1.4",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "daisyui": "^2.6.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "sass": "^1.65.1",
+    "tailwindcss": "^3.0.23",
+    "vite": "^3.0.1"
+  }
+}
