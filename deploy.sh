@@ -12,6 +12,4 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:Korak-997/Korak-997.github.io.git master:gh-pages
 
-rm -rf ./dist
-
 cd -
