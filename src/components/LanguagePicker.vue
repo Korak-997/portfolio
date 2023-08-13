@@ -26,7 +26,7 @@
           "korak",
           JSON.stringify({ settings: { locale: newLocale } })
         );
-        this.$router.go("");
+        location.reload();
       },
     },
   };
