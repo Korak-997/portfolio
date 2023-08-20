@@ -18,10 +18,6 @@
 </script>
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="alert alert-error md:text-4xl text-md w-fit p-4 flex flex-col">
-      <h1>{{ $t("construction") }}</h1>
-      <p>🙏👷😞</p>
-    </div>
     <IntroSection />
     <SkillsSection />
     <TimelineSection />
