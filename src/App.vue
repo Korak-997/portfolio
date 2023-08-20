@@ -26,4 +26,8 @@
   </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+  main {
+    margin-bottom: 6rem;
+  }
+</style>
