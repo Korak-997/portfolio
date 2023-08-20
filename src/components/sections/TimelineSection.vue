@@ -69,10 +69,10 @@
                 {{ $t(`${story.title}`) }}
               </h3>
               <time
-                class="tracki uppercase dark:text-secondary md:text-4xl text-2xl"
+                class="tracki uppercase md:text-4xl text-2xl font-bold text-indigo-500"
                 >{{ story.date }}</time
               >
-              <p class="mt-3 md:text-4xl text-accent">
+              <p class="mt-3 md:text-4xl text-neutral">
                 {{ $t(`${story.des}`) }}
               </p>
             </div>
