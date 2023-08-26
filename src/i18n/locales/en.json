@@ -7,6 +7,15 @@
     },
     "reachout": "Reach Out"
   },
+  "form": {
+    "yourEmail": "Your Email",
+    "yourName": "Your Name",
+    "text": "Text",
+    "send": "Send",
+    "loading": "Please wait your Message is being processed 🙏",
+    "sendSuccess": "Thank you very much, Your text has be successfully sent. I will answer your as soon as possible 🙂",
+    "sendFailed": "Opps! 🙁 Unfortunately your text could not be sent. Please try again if did not Work send me direct message on Instagram."
+  },
   "intro": {
     "hi": "Hi i am Korak",
     "coding": "Coding is my passion not job!"

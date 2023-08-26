@@ -7,6 +7,15 @@
     },
     "reachout": "Kontakt aufnehmen"
   },
+  "form": {
+    "yourEmail": "Deine E-Mail",
+    "yourName": "Ihr Name",
+    "text": "Text",
+    "send": "Schicken",
+    "loading": "Bitte warten Sie, Ihre Nachricht wird bearbeitet 🙏",
+    "sendSuccess": "Vielen Dank, Ihr Text wurde erfolgreich gesendet.  Ich melde mich schnellsten möglich 😇",
+    "sendFailed": "Upps! 😞Leider konnte Ihr Text nicht gesendet werden. Bitte versuchen Sie es erneut, wenn es nicht funktioniert hat, senden Sie mir eine Direktnachricht auf Instagram."
+  },
   "intro": {
     "hi": "Hi ich bin Korak",
     "coding": "Kodierien ist mein Leidenschaft!"

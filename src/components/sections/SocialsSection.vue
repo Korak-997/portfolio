@@ -1,7 +1,11 @@
 <script>
   import Icon from "@iconify/svelte";
+  import ContactForm from "../ContactForm.vue";
   export default {
     name: "SocialsSection",
+    components: {
+      ContactForm,
+    },
     data() {
       return {
         socials: [
@@ -27,19 +31,22 @@
   };
 </script>
 <template>
-  <div
-    class="w-11/12 flex items-center justify-around flex-wrap shadow-2xl gap-4"
-  >
-    <a
-      v-for="social in socials"
-      :key="social.title"
-      class="uppercase relative text-2xl bg-transparent shadow-2xl p-2 rounded-full font-bold"
-      :href="social.url"
-      target="_blank"
+  <div class="flex items-center justify-around flex-col">
+    <div
+      class="w-11/12 flex items-center justify-around flex-wrap shadow-2xl gap-4"
     >
-      <Icon :icon="social.icon" />
-      {{ social.title }}
-    </a>
+      <a
+        v-for="social in socials"
+        :key="social.title"
+        class="uppercase relative text-2xl bg-transparent shadow-2xl p-2 rounded-full font-bold"
+        :href="social.url"
+        target="_blank"
+      >
+        <Icon :icon="social.icon" />
+        {{ social.title }}
+      </a>
+    </div>
+    <ContactForm />
   </div>
 </template>
 
