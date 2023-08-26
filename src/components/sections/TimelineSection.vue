@@ -53,10 +53,10 @@
   };
 </script>
 <template>
-  <section class="text-accent">
+  <section class="text-accent my-6">
     <div
       id="timeline"
-      class="container max-w-5xl px-4 py-12 mx-auto"
+      class="container shadow-md max-w-5xl px-4 py-12 mx-auto"
     >
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
@@ -66,7 +66,7 @@
             <div
               v-for="story in stories"
               :key="story.key"
-              class="shadow-2xl p-2 flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary"
+              class="p-2 flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary"
             >
               <h3 class="text-xl md:text-6xl font-semibold text-primary tracki">
                 {{ $t(`${story.title}`) }}

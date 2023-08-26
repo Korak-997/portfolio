@@ -48,9 +48,7 @@
   };
 </script>
 <template>
-  <div
-    class="flex items-center justify-around flex-wrap gap-4 p-4 shadow-2xl my-6"
-  >
+  <div class="flex items-center justify-around flex-wrap gap-4 p-4 my-6">
     <FlashMsg
       :text="flashText"
       :type="flashType"

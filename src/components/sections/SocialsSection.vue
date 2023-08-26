@@ -27,14 +27,12 @@
   };
 </script>
 <template>
-  <div class="flex items-center justify-around flex-col">
-    <div
-      class="w-11/12 flex items-center justify-around flex-wrap shadow-2xl gap-4"
-    >
+  <div class="flex items-center justify-around flex-col shadow-md">
+    <div class="w-11/12 flex items-center justify-around flex-wrap gap-4">
       <a
         v-for="social in socials"
         :key="social.title"
-        class="uppercase relative text-2xl bg-transparent shadow-2xl p-2 rounded-full font-bold"
+        class="uppercase relative text-2xl bg-transparent p-2 rounded-full font-bold"
         :href="social.url"
         target="_blank"
       >
