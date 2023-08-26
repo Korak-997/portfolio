@@ -22,6 +22,13 @@
             >[{{ $t("common.reachout") }}]</a
           >
         </div>
+        <div class="my-6">
+          <a
+            href="#timeline"
+            class="text-2xl md:text-4xl sh"
+            >[{{ $t("common.readMore") }}]</a
+          >
+        </div>
       </div>
     </div>
   </div>
