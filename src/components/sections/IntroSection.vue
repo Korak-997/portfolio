@@ -5,18 +5,20 @@
 </script>
 <template>
   <div class="h-screen">
-    <div class="wraper w-screen text-primary">
+    <div class="wraper w-screen text-primary flex">
       <div
         class="noise pointer-events-none absolute w-full h-full bg-no-repeat bg-cover -z-10"
       ></div>
       <div class="overlay pointer-events-none absolute w-full h-full"></div>
-      <div class="terminal uppercase absolute w-full h-full p-4">
-        <h1 class="intro-text text-6xl mb-6">{{ $t("intro.hi") }}</h1>
-        <h1 class="intro-text text-4xl mb-6">{{ $t("intro.coding") }}</h1>
+      <div
+        class="terminal uppercase absolute w-full h-full p-4 flex items-center justify-center flex-col"
+      >
+        <h1 class="font-brice text-6xl mb-6 sh">{{ $t("intro.hi") }}</h1>
+        <h1 class="font-brice text-4xl mb-6 sh">{{ $t("intro.coding") }}</h1>
         <div class="my-6">
           <a
             href="#socials"
-            class="text-white text-2xl"
+            class="text-2xl md:text-4xl sh"
             >[{{ $t("common.reachout") }}]</a
           >
         </div>
@@ -26,16 +28,6 @@
 </template>
 
 <style lang="scss" scooped>
-  @font-face {
-    font-family: "Brice";
-    src: url("/fonts/Bricemont.ttf");
-  }
-
-  .intro-text {
-    text-shadow: 3px -2px 3px #00a48c, 1px -2px 2px #00a48c;
-    font-family: "Brice";
-  }
-
   .wraper {
     background-color: #000000;
     background-image: radial-gradient(#11581e, #041607),

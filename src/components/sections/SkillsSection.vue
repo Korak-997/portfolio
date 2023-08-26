@@ -10,7 +10,7 @@
 </script>
 <template>
   <div class="shadow-xl w-11/12 p-4 gap-4">
-    <h1 class="text-primary font-bold text-4xl md:text-6xl p-2">
+    <h1 class="font-brice my-5 text-primary font-bold text-4xl md:text-6xl p-2">
       {{ $t("skills.title") }}
     </h1>
 
