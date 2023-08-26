@@ -1,5 +1,4 @@
 <script>
-  import Icon from "@iconify/svelte";
   import ContactForm from "../ContactForm.vue";
   export default {
     name: "SocialsSection",
@@ -12,17 +11,14 @@
           {
             title: "Github",
             url: "https://github.com/Korak-997",
-            icon: "mdi:github",
           },
           {
             title: "Instagram",
             url: "https://www.instagram.com/korak997/",
-            icon: "mdi:instagram",
           },
           {
             title: "Youtube",
             url: "https://www.youtube.com/channel/UC9j6pieJxlXmpq0k7kV1VDg",
-            icon: "mdi:youtube",
           },
         ],
       };
@@ -42,7 +38,6 @@
         :href="social.url"
         target="_blank"
       >
-        <Icon :icon="social.icon" />
         {{ social.title }}
       </a>
     </div>
