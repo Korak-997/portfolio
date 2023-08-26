@@ -19,7 +19,8 @@
   },
   "intro": {
     "hi": "Hi i am Korak",
-    "coding": "Coding is my passion not job!"
+    "coding": "Coding is my passion not job!",
+    "currentlyWorking": "Currently working at "
   },
   "timeline": {
     "title": "My Life Timeline",
