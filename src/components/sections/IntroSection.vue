@@ -1,6 +1,8 @@
 <script>
+  import CustBtn from "../CustBtn.vue";
   export default {
     name: "IntroSection",
+    components: { CustBtn },
   };
 </script>
 <template>
@@ -17,16 +19,15 @@
         >
       </h1>
       <div class="flex items-center justify-around flex-wrap gap-6">
-        <a
-          href="#socials"
-          class="text-2xl md:text-4xl sh"
-          >[{{ $t("common.reachout") }}]</a
-        >
-        <a
-          href="#timeline"
-          class="text-2xl md:text-4xl sh"
-          >[{{ $t("common.readMore") }}]</a
-        >
+        <CustBtn
+          :text="'common.reachout'"
+          :link="'#socials'"
+        />
+
+        <CustBtn
+          :text="'common.readMore'"
+          :link="'#timeline'"
+        />
       </div>
       <div class="w-11/12 slogan">
         <h1 class="md:text-6xl text-4xl font-bold">
