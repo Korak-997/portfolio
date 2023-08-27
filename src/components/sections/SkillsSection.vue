@@ -14,9 +14,7 @@
       {{ $t("skills.title") }}
     </h1>
 
-    <div
-      class="flex items-center justify-around flex-wrap gap-4 bg-slate-100 p-6"
-    >
+    <div class="flex items-center justify-around flex-wrap gap-4 p-6">
       <img
         v-for="num in numbers"
         :key="num"
