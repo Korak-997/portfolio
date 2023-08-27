@@ -19,8 +19,8 @@
   },
   "intro": {
     "hi": "Hi ich bin Korak",
-    "coding": "Kodierien ist mein Leidenschaft!",
-    "currentlyWorking": "Arbeite derzeit bei "
+    "currentlyWorking": "Arbeite derzeit bei ",
+    "coding": "Programmieren ist Leidenschaft, kein Job!"
   },
   "timeline": {
     "title": "Meine Lebenszeitleiste",
