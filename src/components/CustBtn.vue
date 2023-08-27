@@ -28,11 +28,11 @@
     border-radius: 0.4rem;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: darken($color: #7ed957, $amount: 20%);
+    background-color: darken($color: #7ed957, $amount: 30%);
     color: rgb(234, 234, 234);
     font-weight: 700;
     transition: 0.6s;
-    box-shadow: 0px 0px 40px #7ed957;
+    box-shadow: 0px 0px 10px #7ed957;
     -webkit-box-reflect: below 10px
       linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
     &:active {
