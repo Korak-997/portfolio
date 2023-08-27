@@ -27,7 +27,7 @@
   };
 </script>
 <template>
-  <div class="flex items-center justify-around flex-col shadow-md">
+  <div class="flex items-center justify-around flex-col">
     <div class="w-11/12 flex items-center justify-around flex-wrap gap-4">
       <a
         v-for="social in socials"

@@ -56,7 +56,7 @@
   <section class="text-accent my-6">
     <div
       id="timeline"
-      class="container shadow-md max-w-5xl px-4 py-12 mx-auto"
+      class="container max-w-5xl px-4 py-12 mx-auto"
     >
       <div class="grid gap-4 mx-4 sm:grid-cols-12">
         <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
