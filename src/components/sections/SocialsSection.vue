@@ -35,6 +35,7 @@
         class="uppercase relative text-2xl bg-transparent p-2 rounded-full font-bold"
         :href="social.url"
         target="_blank"
+        :aria-label="social.title"
       >
         {{ social.title }}
       </a>

@@ -13,6 +13,7 @@
     <a
       :href="link"
       class="w-full h-full"
+      :aria-label="link"
       >{{ $t(`${text}`) }}</a
     >
   </button>

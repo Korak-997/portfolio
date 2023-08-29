@@ -1,7 +1,4 @@
 <script>
-  import Logo from "./Logo.vue";
-  import LanguagePicker from "../components/LanguagePicker.vue";
-
   export default {
     name: "logo",
     data() {
@@ -13,7 +10,10 @@
 </script>
 <template>
   <div>
-    <a href="/">
+    <a
+      href="/"
+      aria-label="Homepage_link"
+    >
       <svg
         width="70"
         height="70"
