@@ -30,3 +30,6 @@ coverage
 # Local Netlify folder
 .netlify
 /dist
+
+#unlighthouse used for performance testings
+.unlighthouse
