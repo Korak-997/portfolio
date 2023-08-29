@@ -116,11 +116,15 @@
       </div>
       <button
         type="submit"
-        class="btn btn-md md:btn-xl btn-success my-6"
+        class="btn btn-md md:btn-xl my-6 text-2xl font-bold bg-transparent text-primary border-primary hover:bg-primary hover:text-white"
       >
         {{ $t("form.send") }}
       </button>
     </form>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+  button {
+    transition: all ease-in 0.6s;
+  }
+</style>
