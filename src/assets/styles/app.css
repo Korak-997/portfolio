@@ -9,6 +9,7 @@
 @font-face {
   font-family: "Dakdo";
   src: url("/fonts/DAKDO.otf");
+  font-display: swap;
 }
 .sh {
   text-shadow: 3px -2px 3px #00a48c, 1px -2px 2px #00a48c;
