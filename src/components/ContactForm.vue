@@ -70,7 +70,10 @@
     </div>
     <form @submit="send">
       <div class="form-control w-full max-w-lg">
-        <label class="label">
+        <label
+          class="label"
+          for="email"
+        >
           <span class="label-text text-2xl">{{ $t("form.yourEmail") }}</span>
         </label>
         <input
@@ -83,7 +86,10 @@
         />
       </div>
       <div class="form-control w-full max-w-lg">
-        <label class="label">
+        <label
+          class="label"
+          for="name"
+        >
           <span class="label-text text-2xl">{{ $t("form.yourName") }}</span>
         </label>
         <input
@@ -96,7 +102,10 @@
         />
       </div>
       <div class="form-control w-full max-w-lg">
-        <label class="label">
+        <label
+          class="label"
+          for="text"
+        >
           <span class="label-text text-2xl">{{ $t("form.text") }}</span>
         </label>
         <textarea
