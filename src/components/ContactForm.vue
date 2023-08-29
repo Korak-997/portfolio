@@ -63,6 +63,8 @@
         {{ $t("common.reachout") }}
       </h1>
       <img
+        width="800"
+        height="450"
         class="hidden md:block m-4 w-2/3"
         src="@/assets/contact.svg"
         alt="Reachout"

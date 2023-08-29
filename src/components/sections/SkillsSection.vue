@@ -16,6 +16,8 @@
 
     <div class="flex items-center justify-around flex-wrap gap-4 p-6">
       <img
+        width="160"
+        height="160"
         v-for="num in numbers"
         :key="num"
         class="md:w-36 w-24"

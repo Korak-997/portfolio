@@ -59,6 +59,8 @@
       >
         <p>
           <img
+            width="90"
+            height="90"
             :src="`/flags/${sLocale}.svg`"
             alt="Country flag"
             class="w-6 rounded-xl"
