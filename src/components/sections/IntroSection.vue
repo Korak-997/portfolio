@@ -1,8 +1,9 @@
 <script>
   import CustBtn from "../CustBtn.vue";
+  import SocialsBar from "../SocialsBar.vue";
   export default {
     name: "IntroSection",
-    components: { CustBtn },
+    components: { CustBtn, SocialsBar },
   };
 </script>
 <template>
@@ -34,6 +35,7 @@
           {{ $t("intro.coding") }}
         </h1>
       </div>
+      <SocialsBar :onlyIcon="true" />
     </div>
   </div>
 </template>
