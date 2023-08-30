@@ -1,7 +1,7 @@
 <script>
   import IntroSection from "../components/sections/IntroSection.vue";
   import SkillsSection from "../components/sections/SkillsSection.vue";
-  import SocialsSection from "../components/sections/SocialsSection.vue";
+  import SocialsSection from "../components/sections/ContactsSection.vue";
   import TimelineSection from "../components/sections/TimelineSection.vue";
   export default {
     data() {
