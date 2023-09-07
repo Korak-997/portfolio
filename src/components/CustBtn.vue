@@ -12,7 +12,7 @@
   <button>
     <a
       :href="link"
-      class="w-full h-full"
+      class="w-full h-full md:text-2xl text-md"
       :aria-label="link"
       >{{ $t(`${text}`) }}</a
     >

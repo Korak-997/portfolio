@@ -8,7 +8,7 @@
 </script>
 <template>
   <div class="flex items-center justify-around flex-col text-center gap-10">
-    <h1 class="font-brice text-6xl sh">{{ $t("intro.hi") }}</h1>
+    <h1 class="font-brice md:text-6xl text-4xl sh">{{ $t("intro.hi") }}</h1>
     <h1 class="font-brice text-2xl md:text-4xl sh">
       {{ $t("intro.currentlyWorking") }}
       <a
@@ -18,7 +18,7 @@
         >SINC NOVATION</a
       >
     </h1>
-    <div class="flex items-center justify-around flex-wrap">
+    <div class="flex items-center justify-around flex-wrap w-11/12">
       <CustBtn
         :text="'common.reachout'"
         :link="'#socials'"

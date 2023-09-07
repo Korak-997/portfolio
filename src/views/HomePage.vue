@@ -18,9 +18,17 @@
 </script>
 <template>
   <div class="flex flex-col items-center justify-center">
-    <IntroSection />
-    <SkillsSection />
-    <TimelineSection />
-    <SocialsSection id="socials" />
+    <div class="w-11/12">
+      <IntroSection />
+    </div>
+    <div class="w-11/12">
+      <SkillsSection />
+    </div>
+    <div class="w-11/12">
+      <TimelineSection />
+    </div>
+    <div class="w-11/12">
+      <SocialsSection id="socials" />
+    </div>
   </div>
 </template>
