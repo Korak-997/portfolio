@@ -7,36 +7,34 @@
   };
 </script>
 <template>
-  <div class="h-screen w-full">
-    <div class="flex items-center justify-around flex-col text-center gap-10">
-      <h1 class="font-brice text-6xl sh">{{ $t("intro.hi") }}</h1>
-      <h1 class="font-brice text-2xl md:text-4xl sh">
-        {{ $t("intro.currentlyWorking") }}
-        <a
-          href="https://www.sincnovation.com/en/"
-          class="text-2xl md:text-4xl cp-link"
-          target="-blank"
-          >SINC NOVATION</a
-        >
-      </h1>
-      <div class="flex items-center justify-around flex-wrap gap-6">
-        <CustBtn
-          :text="'common.reachout'"
-          :link="'#socials'"
-        />
+  <div class="flex items-center justify-around flex-col text-center gap-10">
+    <h1 class="font-brice text-6xl sh">{{ $t("intro.hi") }}</h1>
+    <h1 class="font-brice text-2xl md:text-4xl sh">
+      {{ $t("intro.currentlyWorking") }}
+      <a
+        href="https://www.sincnovation.com/en/"
+        class="text-2xl md:text-4xl cp-link"
+        target="-blank"
+        >SINC NOVATION</a
+      >
+    </h1>
+    <div class="flex items-center justify-around flex-wrap">
+      <CustBtn
+        :text="'common.reachout'"
+        :link="'#socials'"
+      />
 
-        <CustBtn
-          :text="'common.readMore'"
-          :link="'#timeline'"
-        />
-      </div>
-      <div class="w-11/12 slogan">
-        <h1 class="md:text-6xl text-4xl font-bold">
-          {{ $t("intro.coding") }}
-        </h1>
-      </div>
-      <SocialsBar :onlyIcon="true" />
+      <CustBtn
+        :text="'common.readMore'"
+        :link="'#timeline'"
+      />
     </div>
+    <div class="w-11/12 slogan">
+      <h1 class="md:text-6xl text-4xl font-bold">
+        {{ $t("intro.coding") }}
+      </h1>
+    </div>
+    <SocialsBar :onlyIcon="true" />
   </div>
 </template>
 <style scoped lang="scss">
