@@ -9,7 +9,7 @@
 <template>
   <div class="flex items-center justify-around flex-col text-center gap-10">
     <div
-      class="container uppercase flex items-center justify-around font-bold text-xl md:text-4xl"
+      class="container uppercase flex items-center font-brice justify-around font-bold text-xl md:text-4xl"
     >
       <p>{{ $t("intro.hi") }}</p>
       <section class="animation h-10 overflow-hidden">
@@ -45,42 +45,10 @@
         :link="'#timeline'"
       />
     </div>
-    <div class="w-11/12 slogan">
-      <h1 class="md:text-6xl text-4xl font-bold">
-        {{ $t("intro.coding") }}
-      </h1>
-    </div>
     <SocialsBar :onlyIcon="true" />
   </div>
 </template>
 <style scoped lang="scss">
-  .slogan {
-    h1 {
-      text-align: center;
-      font-family: "Dakdo";
-
-      background: linear-gradient(
-        to right,
-        rgba(0, 255, 228, 1) 20%,
-        rgba(126, 217, 87, 1) 40%,
-        rgba(29, 228, 192, 1) 60%,
-        rgba(126, 217, 87, 1) 80%
-      );
-      background-size: 200% auto;
-
-      color: #000;
-      background-clip: text;
-      color: transparent;
-      background-clip: text;
-
-      animation: shine 5s linear infinite;
-      @keyframes shine {
-        to {
-          background-position: 200% center;
-        }
-      }
-    }
-  }
   .cp-link {
     background-image: url("../../assets/sincBg.png");
     text-shadow: none;
@@ -117,6 +85,17 @@
 
     100% {
       margin-top: -5.5rem;
+    }
+  }
+
+  @keyframes lights {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #206b0b,
+        0 0 4px #206b0b, 0 0 5px #206b0b, 0 0 10px #206b0b, 0 0 15px #206b0b;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #39b616,
+        0 0 4px #39b616, 0 0 5px #39b616, 0 0 10px #39b616, 0 0 15px #39b616;
     }
   }
 </style>
