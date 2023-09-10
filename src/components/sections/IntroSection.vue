@@ -4,23 +4,40 @@
   export default {
     name: "IntroSection",
     components: { CustBtn, SocialsBar },
+    data() {
+      return {
+        titles: [
+          "korak",
+          "Web Dev",
+          "Full-stack dev",
+          "Youtuber",
+          "Data Processor",
+        ],
+        colors: [
+          "bg-indigo-700 shadow-indigo-500/50",
+          "bg-purple-700 shadow-purple-500/50",
+          "bg-orange-600 shadow-orange-400/50",
+          "bg-red-700 shadow-red-500/50",
+          "bg-cyan-700 shadow-cyan-500/50",
+        ],
+      };
+    },
   };
 </script>
 <template>
   <div class="flex items-center justify-around flex-col text-center gap-10">
     <div
-      class="container uppercase flex items-center font-brice justify-around font-bold text-xl md:text-4xl"
+      class="container uppercase font-brice font-bold text-xl md:text-4xl flex items-center justify-evenly"
     >
       <p>{{ $t("intro.hi") }}</p>
       <section class="animation h-10 overflow-hidden">
-        <div class="bg-indigo-700 text-center p-2">
-          <p>Korak</p>
-        </div>
-        <div class="bg-purple-700 text-center p-2">
-          <p>Web Dev</p>
-        </div>
-        <div class="bg-orange-600 text-center p-2">
-          <p>Full-Stack Dev</p>
+        <div
+          v-for="(title, idx) in titles"
+          :key="idx"
+          :class="colors[idx]"
+          class="text-center p-2 shadow-lg m-4"
+        >
+          <p>{{ title }}</p>
         </div>
       </section>
     </div>
@@ -73,7 +90,7 @@
   .animation {
     div {
       &:first-child {
-        animation: text-animation 5s infinite;
+        animation: text-animation 20s infinite;
       }
     }
   }
@@ -82,9 +99,29 @@
     0% {
       margin-top: 0rem;
     }
-
-    100% {
+    30% {
       margin-top: -5.5rem;
+    }
+    40% {
+      margin-top: -10.5rem;
+    }
+    50% {
+      margin-top: -15.5rem;
+    }
+    60% {
+      margin-top: -20.5rem;
+    }
+    70% {
+      margin-top: -15.5rem;
+    }
+    80% {
+      margin-top: -10.5rem;
+    }
+    90% {
+      margin-top: -5.5rem;
+    }
+    100% {
+      margin-top: 0;
     }
   }
 
