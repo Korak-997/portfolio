@@ -8,7 +8,23 @@
 </script>
 <template>
   <div class="flex items-center justify-around flex-col text-center gap-10">
-    <h1 class="font-brice md:text-6xl text-4xl sh">{{ $t("intro.hi") }}</h1>
+    <div
+      class="container uppercase flex items-center justify-around font-bold text-xl md:text-4xl"
+    >
+      <p>{{ $t("intro.hi") }}</p>
+      <section class="animation h-10 overflow-hidden">
+        <div class="bg-indigo-700 text-center p-2">
+          <p>Korak</p>
+        </div>
+        <div class="bg-purple-700 text-center p-2">
+          <p>Web Dev</p>
+        </div>
+        <div class="bg-orange-600 text-center p-2">
+          <p>Full-Stack Dev</p>
+        </div>
+      </section>
+    </div>
+
     <h1 class="font-brice text-2xl md:text-4xl sh">
       {{ $t("intro.currentlyWorking") }}
       <a
@@ -79,6 +95,28 @@
       transition: all ease-in 1s;
       cursor: pointer;
       background-position: top;
+    }
+  }
+  p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+      0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  .animation {
+    div {
+      &:first-child {
+        animation: text-animation 5s infinite;
+      }
+    }
+  }
+
+  @keyframes text-animation {
+    0% {
+      margin-top: 0rem;
+    }
+
+    100% {
+      margin-top: -5.5rem;
     }
   }
 </style>
