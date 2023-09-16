@@ -32,7 +32,7 @@
             img: Berlin,
             title: "timeline.third.title",
             date: "08/2018",
-            des: "timeline.third.des",
+            des: false,
           },
           {
             key: "fourth",
@@ -81,6 +81,7 @@
     v-for="story in stories"
     :key="story.key"
     class="card w-96 h-64"
+    :class="{ rotate: story.des }"
   >
     <div class="card-inner relative w-full h-full custom-shadow">
       <div
@@ -88,7 +89,7 @@
         :style="`background:url(${story.img}); background-size:cover; background-repeat: no-repeat; background-position: center;`"
       >
         <div
-          class="backdrop-brightness-50 w-full h-full flex items-center justify-center flex-col text-white"
+          class="backdrop-brightness-50 backdrop-blur-sm w-full h-full flex items-center justify-center flex-col text-white"
         >
           <h1 class="md:text-4xl text-xl font-bold text-center">
             {{ $t(`${story.title}`) }}
@@ -97,8 +98,7 @@
         </div>
       </div>
       <div
-        class="card-back w-full h-full absolute flex items-center justify-center p-2 bg-transparent"
-        v-if="story.des.length > 0"
+        class="card-back w-full h-full absolute flex items-center justify-center p-2 bg-transparent text-2xl font-bold"
       >
         <p>
           {{ $t(`${story.des}`) }}
@@ -113,27 +113,26 @@
   }
   .card {
     perspective: 1000px;
-  }
 
-  .card-inner {
-    transform-style: preserve-3d;
-    transition: transform 0.999s;
-  }
+    .card-inner {
+      transform-style: preserve-3d;
+      transition: transform 0.999s;
+    }
+    .card-front,
+    .card-back {
+      backface-visibility: hidden;
+    }
+    .card-front {
+      transform: rotateY(0deg);
+    }
 
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
+    .card-back {
+      transform: rotateY(180deg);
+    }
   }
-
-  .card-front,
-  .card-back {
-    backface-visibility: hidden;
-  }
-
-  .card-front {
-    transform: rotateY(0deg);
-  }
-
-  .card-back {
-    transform: rotateY(180deg);
+  .rotate {
+    &:hover .card-inner {
+      transform: rotateY(180deg);
+    }
   }
 </style>
