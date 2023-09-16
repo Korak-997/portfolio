@@ -1,4 +1,13 @@
 <script>
+  import Flag from "@/assets/flag.png";
+  import Berlin from "@/assets/berlin.jpg";
+  import ApprenticeShip from "@/assets/apprenticeShip.jpg";
+  import DataProcessor from "@/assets/dataProcessor.jpg";
+  import German from "@/assets/german.jpg";
+  import Leave from "@/assets/leave.jpg";
+  import Selftaught from "@/assets/selftaught.jpg";
+  import yt from "@/assets/yt.png";
+
   export default {
     name: "Timeline",
     data() {
@@ -6,48 +15,56 @@
         stories: [
           {
             key: "first",
+            img: Flag,
             title: "timeline.first.title",
             date: "18-03-1997",
             des: "timeline.first.des",
           },
           {
             key: "second",
+            img: Leave,
             title: "timeline.second.title",
             date: "2016",
             des: "timeline.second.des",
           },
           {
             key: "third",
+            img: Berlin,
             title: "timeline.third.title",
             date: "08/2018",
             des: "timeline.third.des",
           },
           {
             key: "fourth",
+            img: German,
             title: "timeline.fourth.title",
             date: "2018-2020",
             des: "timeline.fourth.des",
           },
           {
             key: "fifth",
+            img: Selftaught,
             title: "timeline.fifth.title",
             date: "2019",
             des: "timeline.fifth.des",
           },
           {
             key: "sixth",
+            img: ApprenticeShip,
             title: "timeline.sixth.title",
             date: "08-2020",
             des: "timeline.sixth.des",
           },
           {
             key: "seventh",
+            img: yt,
             title: "timeline.seventh.title",
             date: "13-02-2021",
             des: "timeline.seventh.des",
           },
           {
             key: "eighth",
+            img: DataProcessor,
             title: "timeline.eighth.title",
             date: "18-09-2023",
             des: "timeline.eighth.des",
@@ -58,36 +75,65 @@
     methods: {},
   };
 </script>
+
 <template>
-  <section class="text-accent my-6">
-    <div
-      id="timeline"
-      class="container max-w-5xl px-4 py-12 mx-auto"
-    >
-      <div class="grid gap-4 mx-4 sm:grid-cols-12">
-        <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-          <div
-            class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700"
-          >
-            <div
-              v-for="story in stories"
-              :key="story.key"
-              class="p-2 flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary"
-            >
-              <h3 class="text-xl md:text-6xl font-semibold text-primary tracki">
-                {{ $t(`${story.title}`) }}
-              </h3>
-              <time
-                class="tracki uppercase md:text-4xl text-2xl font-bold text-indigo-500"
-                >{{ story.date }}</time
-              >
-              <p class="mt-3 md:text-4xl text-neutral">
-                {{ $t(`${story.des}`) }}
-              </p>
-            </div>
-          </div>
+  <div
+    v-for="story in stories"
+    :key="story.key"
+    class="card w-96 h-64"
+  >
+    <div class="card-inner relative w-full h-full custom-shadow">
+      <div
+        class="card-front w-full h-full absolute bg-transparent"
+        :style="`background:url(${story.img}); background-size:cover; background-repeat: no-repeat; background-position: center;`"
+      >
+        <div
+          class="backdrop-brightness-50 w-full h-full flex items-center justify-center flex-col text-white"
+        >
+          <h1 class="md:text-4xl text-xl font-bold text-center">
+            {{ $t(`${story.title}`) }}
+          </h1>
+          <p class="text-2xl">{{ $t(`${story.date}`) }}</p>
         </div>
       </div>
+      <div
+        class="card-back w-full h-full absolute flex items-center justify-center p-2 bg-transparent"
+        v-if="story.des.length > 0"
+      >
+        <p>
+          {{ $t(`${story.des}`) }}
+        </p>
+      </div>
     </div>
-  </section>
+  </div>
 </template>
+<style lang="scss" scoped>
+  .custom-shadow {
+    box-shadow: 0px 0px 6px #7ed957;
+  }
+  .card {
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    backface-visibility: hidden;
+  }
+
+  .card-front {
+    transform: rotateY(0deg);
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+  }
+</style>
