@@ -80,6 +80,7 @@
         </label>
         <input
           type="email"
+          id="email"
           placeholder="test@test.com"
           class="input input-bordered input-primary w-full max-w-lg"
           autocomplete="off"
@@ -95,6 +96,7 @@
           <span class="label-text text-2xl">{{ $t("form.yourName") }}</span>
         </label>
         <input
+          id="name"
           type="text"
           placeholder="Joe Doe"
           class="input input-bordered input-primary w-full max-w-lg"
@@ -111,6 +113,7 @@
           <span class="label-text text-2xl">{{ $t("form.text") }}</span>
         </label>
         <textarea
+          id="text"
           class="textarea textarea-primary"
           required
           name="text"
