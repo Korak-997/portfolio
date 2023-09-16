@@ -2,11 +2,10 @@
   "name": "korak-kurani-portfolio",
   "version": "1.0.0",
   "scripts": {
-    "build": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "dev": "vite",
     "deploy": "sh deploy.sh",
-    "preview": "vite preview --port 4173"
+    "preview": "vite build vite preview --port 4173"
   },
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^0.8.1",
