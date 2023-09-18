@@ -24,7 +24,7 @@
     <div class="w-11/12">
       <SkillsSection />
     </div>
-    <div class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6">
+    <div id="timeline" class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6">
       <TimelineSection />
     </div>
     <div class="w-11/12">
