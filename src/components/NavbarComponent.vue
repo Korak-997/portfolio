@@ -1,16 +1,12 @@
 <script>
   import Logo from "./Logo.vue";
-  import LanguagePicker from "../components/LanguagePicker.vue";
   export default {
     name: "NavbarComponent",
-    data() {},
 
     components: {
       Logo,
-      LanguagePicker,
     },
 
-    methods: {},
   };
 </script>
 <template>

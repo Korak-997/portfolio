@@ -3,6 +3,7 @@
   import FooterComponent from "./components/FooterComponent.vue";
   import NavbarComponent from "./components/NavbarComponent.vue";
   export default {
+    name: "App",
     data() {
       return {};
     },
@@ -11,8 +12,6 @@
       FooterComponent,
       RouterView,
     },
-    methods: {},
-    mounted() {},
   };
 </script>
 

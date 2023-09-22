@@ -4,6 +4,7 @@
   import SocialsSection from "../components/sections/ContactsSection.vue";
   import TimelineSection from "../components/sections/TimelineSection.vue";
   export default {
+    name: "HomePage",
     data() {
       return {};
     },
