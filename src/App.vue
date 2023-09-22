@@ -11,8 +11,6 @@
       FooterComponent,
       RouterView,
     },
-    methods: {},
-    mounted() {},
   };
 </script>
 
