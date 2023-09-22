@@ -5,7 +5,6 @@
 
     components: {
       Logo,
-      LanguagePicker,
     },
 
   };
