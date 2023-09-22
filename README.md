@@ -1,3 +1,6 @@
+[![DeepSource](https://app.deepsource.com/gh/Korak-997/portfolio.svg/?label=active+issues&show_trend=true&token=cR5MaqyeCbvpJG52p-_vjdHK)](https://app.deepsource.com/gh/Korak-997/portfolio/?ref=repository-badge)
+[![DeepSource](https://app.deepsource.com/gh/Korak-997/portfolio.svg/?label=resolved+issues&show_trend=true&token=cR5MaqyeCbvpJG52p-_vjdHK)](https://app.deepsource.com/gh/Korak-997/portfolio/?ref=repository-badge)
+
 # Hi There
 
 here is my personal Portfolio fill free to use it as a template for yourself 😄
