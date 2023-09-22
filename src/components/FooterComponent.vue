@@ -1,7 +1,7 @@
 <script>
   import LanguagePicker from "../components/LanguagePicker.vue";
   export default {
-    name: "NavbarComponent",
+    name: "FooterComponent",
 
     components: {
       LanguagePicker,
