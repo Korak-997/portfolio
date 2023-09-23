@@ -7,7 +7,7 @@ const Trans = {
   get supportedLocales() {
     return import.meta.env.VITE_SUPPORTED_LOCALES.split(",");
   },
-  async switchLanguage(newLocale) {
+  switchLanguage(newLocale) {
     const html = document.querySelector("html");
     Trans.currentLocale = newLocale;
     html.setAttribute("lang", newLocale);
