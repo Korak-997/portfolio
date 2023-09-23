@@ -1,7 +1,8 @@
 <script>
-export default {
-  name: "CloseBtn",
-};
+  export default {
+    name: "CloseBtn",
+    emits: ["close"],
+  };
 </script>
 <template>
   <button

@@ -1,6 +1,7 @@
 <script>
   export default {
     name: "AlertMsg",
+    emits: ["deny", "accept"],
     props: {
       text: String,
       show: Boolean,

@@ -3,7 +3,6 @@
     name: "CusBtn",
     props: {
       text: String,
-      action: String,
       link: String,
     },
   };
