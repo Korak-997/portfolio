@@ -51,6 +51,7 @@
         target="_blank"
         :aria-label="social.title"
         v-if="onlyIcon"
+        rel="noopener noreferrer"
       >
         <Icon :icon="social.icon" />
       </a>
@@ -59,6 +60,7 @@
         :href="social.url"
         target="_blank"
         :aria-label="social.title"
+        rel="noopener noreferrer"
         v-else
       >
         <Icon
