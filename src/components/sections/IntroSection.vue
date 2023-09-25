@@ -67,7 +67,7 @@
 </template>
 <style scoped lang="scss">
   .cp-link {
-    background-image: url("../../assets/sincBg.png");
+    background-image: url("../../assets/sincBg.webp");
     text-shadow: none;
     background-repeat: no-repeat;
     background-clip: text;
