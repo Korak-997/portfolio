@@ -38,6 +38,8 @@
       tabindex="0"
       class="btn btn-ghost rounded-btn hover:border-primary"
       ><img
+        width="90"
+        height="90"
         :src="`/flags/${locale}.svg`"
         :alt="`Country flag for (${sLocale}) language`"
         class="w-8 rounded-xl"
