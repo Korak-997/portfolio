@@ -29,7 +29,7 @@
           {
             title: "LinkedIn",
             icon: "mdi:linkedin",
-            url: "https://de.linkedin.com/in/kurani-korak-94351b235",
+            url: "https://linkedin.com/in/korak-kurani-94351b235",
           },
         ],
       };
