@@ -42,7 +42,7 @@
       </section>
     </div>
 
-    <h1 class="font-brice text-2xl md:text-4xl sh">
+    <h1 class="font-brice text-2xl md:text-4xl">
       {{ $t("intro.currentlyWorking") }}
       <a
         href="https://www.sincnovation.com/en/"

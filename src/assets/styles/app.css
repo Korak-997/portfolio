@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "Brice";
-  src: url("/fonts/Bricemont.ttf");
+  font-family: "adlam";
+  src: url("/fonts/ADLaMDisplay-Regular.ttf");
   font-display: swap;
-}
-
-.sh {
-  text-shadow: 3px -2px 3px #00a48c, 1px -2px 2px #00a48c;
-}
-.font-brice {
-  font-family: "Brice";
 }
 
 :root[data-theme="light"] {
@@ -27,4 +20,8 @@
   --primary: #7fd959;
   --secondary: #0d013c;
   --accent: #4fbf9e;
+}
+
+body {
+  font-family: "adlam";
 }
