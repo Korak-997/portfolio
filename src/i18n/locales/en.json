@@ -17,6 +17,13 @@
     "sendSuccess": "Thank you very much, Your text has be successfully sent. I will answer your as soon as possible 🙂",
     "sendFailed": "Opps! 🙁 Unfortunately your text could not be sent. Please try again if did not Work send me direct message on Instagram."
   },
+  "projects": {
+    "live": "Live Preview",
+    "docs": "Documentation",
+    "001": {
+      "des": "Dream Style is a nice and simple Website for a Barber Shop or Barber Salon"
+    }
+  },
   "intro": {
     "hi": "Hi i am",
     "coding": "Programming is passion not a job!",
