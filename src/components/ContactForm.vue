@@ -59,7 +59,7 @@
       :show="loadingShow"
     />
     <div>
-      <h1 class="text-4xl md:text-6xl text-primary font-bold font-brice my-6">
+      <h1 class="text-4xl md:text-6xl text-primary font-bold my-6">
         {{ $t("common.reachout") }}
       </h1>
       <img
