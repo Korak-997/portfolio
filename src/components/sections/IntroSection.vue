@@ -27,7 +27,7 @@
 <template>
   <div class="flex items-center justify-around flex-col text-center gap-10">
     <div
-      class="container uppercase font-brice font-bold text-xl md:text-4xl flex items-center justify-evenly"
+      class="container uppercase font-bold text-xl md:text-4xl flex items-center justify-evenly"
     >
       <p>{{ $t("intro.hi") }}</p>
       <section class="animation h-10 overflow-hidden">
@@ -42,7 +42,7 @@
       </section>
     </div>
 
-    <h1 class="font-brice text-2xl md:text-4xl sh">
+    <h1 class="text-2xl md:text-4xl">
       {{ $t("intro.currentlyWorking") }}
       <a
         href="https://www.sincnovation.com/en/"
