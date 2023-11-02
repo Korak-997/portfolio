@@ -18,6 +18,7 @@
     "sendFailed": "Opps! 🙁 Unfortunately your text could not be sent. Please try again if did not Work send me direct message on Instagram."
   },
   "projects": {
+    "title": "Projects",
     "live": "Live Preview",
     "docs": "Documentation",
     "001": {
