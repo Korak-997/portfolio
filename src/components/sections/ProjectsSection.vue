@@ -51,7 +51,7 @@
                 :key="idx"
                 :href="link.url"
                 target="_blank"
-                class="btn btn-sm btn-outline btn-accent"
+                class="bg-transparent p-2 text-accent rounded-full relative text-xl shadow-sm shadow-primary overflow-hidden"
                 >{{ $t(`${link.name}`) }}</a
               >
             </div>
@@ -61,3 +61,29 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+  a {
+    border: unset;
+    color: var(--accent);
+    z-index: 1;
+    transition: all 250ms;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 15px;
+      background-color: lighten(#0d013c, 20%);
+      z-index: -1;
+      transition: all 250ms;
+    }
+    &:hover {
+      color: #e8e8e8;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+</style>
