@@ -56,7 +56,10 @@
         :text="'common.reachout'"
         :link="'#socials'"
       />
-
+      <CustBtn
+        :text="'projects.title'"
+        :link="'#projects'"
+      />
       <CustBtn
         :text="'common.readMore'"
         :link="'#timeline'"
