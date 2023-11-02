@@ -18,7 +18,9 @@
     "sendFailed": "Opps! 🙁 Unfortunately your text could not be sent. Please try again if did not Work send me direct message on Instagram."
   },
   "projects": {
-    "live": "Live Preview",
+    "title": "Projects",
+    "live": "Preview",
+
     "docs": "Documentation",
     "001": {
       "des": "Dream Style is a nice and simple Website for a Barber Shop or Barber Salon"

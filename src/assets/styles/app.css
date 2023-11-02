@@ -24,4 +24,5 @@
 
 body {
   font-family: "adlam";
+  scroll-behavior: smooth;
 }

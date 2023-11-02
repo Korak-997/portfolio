@@ -18,8 +18,9 @@
     "sendFailed": "Upps! 😞Leider konnte Ihr Text nicht gesendet werden. Bitte versuchen Sie es erneut, wenn es nicht funktioniert hat, senden Sie mir eine Direktnachricht auf Instagram."
   },
   "projects": {
+    "title": "Projekte",
     "docs": "Dokumentation",
-    "live": "Live Vorschau",
+    "live": "Vorschau",
     "001": {
       "des": "Dream Style ist eine schöne und einfache Website für einen Friseursalon"
     }
