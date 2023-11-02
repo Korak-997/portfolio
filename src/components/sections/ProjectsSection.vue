@@ -51,6 +51,7 @@
                 :key="idx"
                 :href="link.url"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="bg-transparent p-2 text-accent rounded-full relative text-md shadow-sm shadow-primary overflow-hidden"
                 >{{ $t(`${link.name}`) }}</a
               >
