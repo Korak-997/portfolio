@@ -19,7 +19,7 @@
     </h1>
     <div class="flex items-center justify-around flex-wrap p-4 w-11/12">
       <div
-        class="card w-96 bg-base-100 shadow-md shadow-primary"
+        class="card w-96 bg-base-100 shadow-md shadow-primary m-4"
         v-for="project in projects"
         :key="project.id"
       >
@@ -44,14 +44,14 @@
               />
             </div>
             <div
-              class="w-11/12 mt-4 flex items-center justify-between flex-wrap"
+              class="w-full mt-4 flex items-center justify-between flex-wrap"
             >
               <a
                 v-for="(link, idx) in project.links"
                 :key="idx"
                 :href="link.url"
                 target="_blank"
-                class="bg-transparent p-2 text-accent rounded-full relative text-xl shadow-sm shadow-primary overflow-hidden"
+                class="bg-transparent p-2 text-accent rounded-full relative text-md shadow-sm shadow-primary overflow-hidden"
                 >{{ $t(`${link.name}`) }}</a
               >
             </div>
