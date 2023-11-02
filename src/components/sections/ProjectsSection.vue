@@ -56,6 +56,11 @@
                 >{{ $t(`${link.name}`) }}</a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="flex items-center justify-around flex-wrap p-4">
     <div
       class="card w-96 bg-base-100 shadow-md shadow-primary"
