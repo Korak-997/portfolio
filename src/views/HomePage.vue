@@ -1,6 +1,5 @@
 <script>
   import IntroSection from "../sections/IntroSection.vue";
-  import SkillsSection from "../sections/SkillsSection.vue";
   import SocialsSection from "../sections/ContactsSection.vue";
   import TimelineSection from "../sections/TimelineSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
@@ -11,7 +10,6 @@
     },
     components: {
       IntroSection,
-      SkillsSection,
       TimelineSection,
       SocialsSection,
       ProjectsSection,
