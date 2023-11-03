@@ -88,32 +88,3 @@
     </li>
   </ol>
 </template>
-<style lang="scss" scoped>
-  .custom-shadow {
-    box-shadow: 0px 0px 6px #7ed957;
-  }
-  .card {
-    perspective: 1000px;
-
-    .card-inner {
-      transform-style: preserve-3d;
-      transition: transform 0.999s;
-    }
-    .card-front,
-    .card-back {
-      backface-visibility: hidden;
-    }
-    .card-front {
-      transform: rotateY(0deg);
-    }
-
-    .card-back {
-      transform: rotateY(180deg);
-    }
-  }
-  .rotate {
-    &:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-  }
-</style>

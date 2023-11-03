@@ -81,7 +81,7 @@
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 0 0 6px 0.5px var(--text);
+    box-shadow: 0 0 6px 0.5px var(--accent);
     line-height: 1;
   }
 
