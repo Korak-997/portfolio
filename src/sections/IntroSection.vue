@@ -1,6 +1,6 @@
 <script>
-  import CustBtn from "../CustBtn.vue";
-  import SocialsBar from "../SocialsBar.vue";
+  import CustBtn from "@/components/CustBtn.vue";
+  import SocialsBar from "@/components/SocialsBar.vue";
   export default {
     name: "IntroSection",
     components: { CustBtn, SocialsBar },
@@ -70,7 +70,7 @@
 </template>
 <style scoped lang="scss">
   .cp-link {
-    background-image: url("../../assets/sincBg.webp");
+    background-image: url("@/assets/sincBg.webp");
     text-shadow: none;
     background-repeat: no-repeat;
     background-clip: text;

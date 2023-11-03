@@ -1,6 +1,6 @@
 <script>
-  import ContactForm from "../ContactForm.vue";
-  import SocialsBar from "../SocialsBar.vue";
+  import ContactForm from "@/components/ContactForm.vue";
+  import SocialsBar from "@/components/SocialsBar.vue";
   export default {
     name: "SocialsSection",
     components: {
