@@ -1,9 +1,8 @@
 <script>
-  import IntroSection from "../components/sections/IntroSection.vue";
-  import SkillsSection from "../components/sections/SkillsSection.vue";
-  import SocialsSection from "../components/sections/ContactsSection.vue";
-  import TimelineSection from "../components/sections/TimelineSection.vue";
-  import ProjectsSection from "../components/sections/ProjectsSection.vue";
+  import IntroSection from "../sections/IntroSection.vue";
+  import SocialsSection from "../sections/ContactsSection.vue";
+  import TimelineSection from "../sections/TimelineSection.vue";
+  import ProjectsSection from "../sections/ProjectsSection.vue";
   export default {
     name: "HomePage",
     data() {
@@ -11,7 +10,6 @@
     },
     components: {
       IntroSection,
-      SkillsSection,
       TimelineSection,
       SocialsSection,
       ProjectsSection,
