@@ -19,7 +19,7 @@
     </h1>
     <div class="flex items-center justify-around flex-wrap p-4 w-11/12">
       <div
-        class="card w-96 bg-base-100 shadow-md shadow-primary m-4"
+        class="card w-96 bg-base-100 shadow-md shadow-accent m-4"
         v-for="project in projects"
         :key="project.id"
       >
@@ -52,7 +52,7 @@
                 :href="link.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-transparent p-2 text-accent rounded-full relative text-md shadow-sm shadow-primary overflow-hidden"
+                class="bg-transparent p-2 text-accent rounded-full relative text-md shadow-sm shadow-accent overflow-hidden"
                 >{{ $t(`${link.name}`) }}</a
               >
             </div>
@@ -116,9 +116,9 @@
       height: 100%;
       width: 0;
       border-radius: 15px;
-      background-color: lighten(#0d013c, 20%);
       z-index: -1;
       transition: all 250ms;
+      background-color: var(--accent);
     }
     &:hover {
       color: #e8e8e8;
