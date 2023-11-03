@@ -93,6 +93,7 @@
               :key="idx"
               :href="link.url"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-sm btn-outline btn-accent"
               >{{ $t(`${link.name}`) }}</a
             >
