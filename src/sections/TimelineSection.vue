@@ -61,14 +61,14 @@
 
 <template>
   <ol
-    class="border-l-2 border-primary w-11/12"
+    class="border-l-2 border-accent w-11/12"
     v-for="story in stories"
     :key="story.key"
   >
     <li>
       <div class="flex-start flex items-center">
         <div
-          class="-ml-[9px] -mt-2 mr-3 flex h-4 w-4 items-center justify-center rounded-full bg-primary dark:bg-primary-500"
+          class="-ml-[9px] -mt-2 mr-3 flex h-4 w-4 items-center justify-center rounded-full bg-accent"
         ></div>
         <h1 class="-mt-4 md:text-4xl text-xl font-bold text-center">
           {{ $t(`${story.title}`) }}
