@@ -1,5 +1,6 @@
 <script>
   import Badge from "@/components/Badge.vue";
+  import CustBtn from "../components/CustBtn.vue";
   export default {
     name: "ProjectsSection",
     computed: {
@@ -9,6 +10,7 @@
     },
     components: {
       Badge,
+      CustBtn,
     },
   };
 </script>
@@ -19,7 +21,7 @@
     </h1>
     <div class="flex items-center justify-around flex-wrap p-4 w-11/12">
       <div
-        class="card w-96 bg-base-100 shadow-md shadow-accent m-4"
+        class="card w-96 bg-base-100 border border-accent m-4"
         v-for="project in projects"
         :key="project.id"
       >
@@ -44,17 +46,15 @@
               />
             </div>
             <div
-              class="w-full mt-4 flex items-center justify-between flex-wrap"
+              class="w-full mt-4 flex items-center justify-around flex-wrap gap-4"
             >
-              <a
+              <CustBtn
                 v-for="(link, idx) in project.links"
                 :key="idx"
-                :href="link.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="bg-transparent p-2 text-accent rounded-full relative text-md shadow-sm shadow-accent overflow-hidden"
-                >{{ $t(`${link.name}`) }}</a
-              >
+                :text="$t(`${link.name}`)"
+                :link="link.url"
+                out
+              />
             </div>
           </div>
         </div>
