@@ -3,6 +3,7 @@
   import SocialsSection from "../sections/ContactsSection.vue";
   import TimelineSection from "../sections/TimelineSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
+  import TerminalSection from "../sections/TerminalSection.vue";
   export default {
     name: "HomePage",
     data() {
@@ -13,6 +14,7 @@
       TimelineSection,
       SocialsSection,
       ProjectsSection,
+      TerminalSection,
     },
     methods: {},
   };
@@ -21,6 +23,12 @@
   <div class="flex flex-col items-center justify-center">
     <div class="w-11/12">
       <IntroSection />
+    </div>
+    <div
+      id="terminal"
+      class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
+    >
+      <TerminalSection />
     </div>
     <div
       id="projects"

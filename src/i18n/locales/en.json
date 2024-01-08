@@ -1,5 +1,14 @@
 {
-  "construction": "My website is currently under continues development, so problems may arise.",
+  "alerts": {
+    "terminal": "This will be a small Gnome like terminal. Just to input some funny basic commands. Some commands can change the website looks and some of them will be just for fun. The terminal is yet work in progress and will be updated continuously. 😃 😃 😃"
+  },
+  "terminalToast": {
+    "light": "changes theme to light",
+    "dark": "changes theme to dark",
+    "en": "changes language to english",
+    "de": "changes language to german",
+    "help": "shows help"
+  },
   "common": {
     "locale": {
       "en": "English",

@@ -1,5 +1,14 @@
 {
-  "construction": "Meine Website befindet sich derzeit in Weiterentwicklung, wobei es zu Problemen führen kann",
+  "alerts": {
+    "terminal": "Dies wird ein kleines Gnome-ähnliches Terminal sein. Nur um ein paar lustige Grundbefehle einzugeben. Einige Befehle können das Aussehen von der Website verändern, andere dienen nur dem Spaß. Das Terminal ist noch in Arbeit und wird laufend aktualisiert. 😃 😃 😃"
+  },
+  "terminalToast": {
+    "light": "ändert das Theme in Hell",
+    "dark": "ändert das Theme in dunkel",
+    "en": "Ändert die Sprache auf Englisch",
+    "de": "Ändert die Sprache auf Deutsch",
+    "help": "zeigt Hilfe an"
+  },
   "common": {
     "locale": {
       "en": "English",
