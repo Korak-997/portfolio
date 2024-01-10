@@ -2,6 +2,9 @@
   "alerts": {
     "terminal": "Dies wird ein kleines Gnome-ähnliches Terminal sein. Nur um ein paar lustige Grundbefehle einzugeben. Einige Befehle können das Aussehen von der Website verändern, andere dienen nur dem Spaß. Das Terminal ist noch in Arbeit und wird laufend aktualisiert. 😃 😃 😃"
   },
+  "home": {
+    "showTerminal": "Terminal Aufmachen"
+  },
   "terminalToast": {
     "light": "ändert das Theme in Hell",
     "dark": "ändert das Theme in dunkel",

@@ -1,20 +1,29 @@
 <script>
   import IntroSection from "../sections/IntroSection.vue";
+  import { Icon } from "@iconify/vue";
+
   import SocialsSection from "../sections/ContactsSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
   import TerminalSection from "../sections/TerminalSection.vue";
   export default {
     name: "HomePage",
     data() {
-      return {};
+      return {
+        showTerminal: false,
+      };
     },
     components: {
       IntroSection,
       SocialsSection,
       ProjectsSection,
       TerminalSection,
+      Icon,
     },
-    methods: {},
+    methods: {
+      handleShowTerminal(e) {
+        console.log(e);
+      },
+    },
   };
 </script>
 <template>
@@ -26,7 +35,25 @@
       id="terminal"
       class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
     >
-      <TerminalSection />
+      <Icon
+        icon="akar-icons:cross"
+        class="rounded-full m-1 p-1 text-2xl text-red-500 cursor-pointer hover:bg-red-500 hover:text-white"
+        @click="showTerminal = false"
+        v-if="showTerminal"
+      />
+      <TerminalSection v-if="showTerminal" />
+
+      <div
+        v-else
+        class="flex flex-col items-center justify-center gap-4"
+      >
+        <button
+          class="btn btn-primary btn-outline"
+          @click="() => (showTerminal = true)"
+        >
+          {{ $t("home.showTerminal") }}
+        </button>
+      </div>
     </div>
     <div
       id="projects"
