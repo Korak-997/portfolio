@@ -1,7 +1,6 @@
 <script>
   import IntroSection from "../sections/IntroSection.vue";
   import SocialsSection from "../sections/ContactsSection.vue";
-  import TimelineSection from "../sections/TimelineSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
   import TerminalSection from "../sections/TerminalSection.vue";
   export default {
@@ -11,7 +10,6 @@
     },
     components: {
       IntroSection,
-      TimelineSection,
       SocialsSection,
       ProjectsSection,
       TerminalSection,
@@ -35,12 +33,6 @@
       class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
     >
       <ProjectsSection />
-    </div>
-    <div
-      id="timeline"
-      class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
-    >
-      <TimelineSection />
     </div>
     <div class="w-11/12">
       <SocialsSection id="socials" />
