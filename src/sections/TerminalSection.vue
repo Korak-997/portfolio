@@ -38,6 +38,12 @@
       html.setAttribute("data-theme", this.theme);
     },
     methods: {
+      handleMaximize(e) {
+        e.target.parentElement.parentElement.parentElement.requestFullscreen();
+      },
+      handleMinimize(e) {
+        document.exitFullscreen();
+      },
       handleTerminalCommand(e) {
         e.preventDefault();
         const givenCommand = e.target.value.toLowerCase().trim();
@@ -90,14 +96,16 @@
         <div class="flex items-center justify-around">
           <Icon
             icon="ic:baseline-minus"
-            class="bg-stone-700 rounded-full m-1 p-1 text-lg"
+            class="bg-stone-700 rounded-full m-1 p-1 text-lg cursor-pointer hover:bg-secondary"
+            @click="handleMinimize"
           /><Icon
             icon="ph:square-light"
-            class="bg-stone-700 rounded-full m-1 p-1 text-lg"
+            class="bg-stone-700 rounded-full m-1 p-1 text-lg cursor-pointer hover:bg-secondary"
+            @click="handleMaximize"
           />
           <Icon
             icon="akar-icons:cross"
-            class="bg-secondary rounded-full m-1 p-1 text-lg cursor-pointer hover:bg-error"
+            class="bg-stone-700 rounded-full m-1 p-1 text-lg cursor-pointer hover:bg-error"
             @click="$emit('closeTerminal')"
           />
         </div>
