@@ -60,25 +60,6 @@
   };
 </script>
 <template>
-  <!-- <div
-    class="timeline"
-    v-for="story in stories"
-    :key="story.key"
-  >
-    <h2 class="timeline__item timeline__item--year">
-      {{ $t(`${story.date}`) }}
-    </h2>
-    <div class="timeline__item">
-      <h3 class="timeline__title">{{ $t(`${story.title}`) }}</h3>
-      <p
-        v-if="story.des"
-        class="mb-4 mt-2 text-neutral-600 dark:text-neutral-300"
-      >
-        {{ $t(`${story.des}`) }}
-      </p>
-    </div>
-  </div> -->
-
   <ul
     class="p-4 lg:p-8"
     v-for="story in stories"
