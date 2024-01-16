@@ -26,7 +26,7 @@
     </div>
     <div
       id="terminal"
-      class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
+      class="w-11/12 sm:flex hidden items-center justify-around gap-10 flex-wrap my-6"
     >
       <TerminalSection
         @closeTerminal="() => (showTerminal = false)"
