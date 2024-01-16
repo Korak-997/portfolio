@@ -4,6 +4,7 @@
   import Tr from "../i18n/translations";
   export default {
     name: "TerminalSection",
+    emits: ["closeTerminal"],
     setup() {
       const { t, locale } = useI18n();
       const supportedLocales = Tr.supportedLocales;
@@ -41,7 +42,7 @@
       handleMaximize(e) {
         e.target.parentElement.parentElement.parentElement.requestFullscreen();
       },
-      handleMinimize(e) {
+      handleMinimize() {
         document.exitFullscreen();
       },
       handleTerminalCommand(e) {

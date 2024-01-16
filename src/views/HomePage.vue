@@ -1,6 +1,5 @@
 <script>
   import IntroSection from "../sections/IntroSection.vue";
-  import { Icon } from "@iconify/vue";
 
   import SocialsSection from "../sections/ContactsSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
@@ -17,12 +16,6 @@
       SocialsSection,
       ProjectsSection,
       TerminalSection,
-      Icon,
-    },
-    methods: {
-      handleShowTerminal(e) {
-        console.log(e);
-      },
     },
   };
 </script>
