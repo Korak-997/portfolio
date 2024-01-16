@@ -35,13 +35,10 @@
       id="terminal"
       class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
     >
-      <Icon
-        icon="akar-icons:cross"
-        class="rounded-full m-1 p-1 text-2xl text-red-500 cursor-pointer hover:bg-red-500 hover:text-white"
-        @click="showTerminal = false"
+      <TerminalSection
+        @closeTerminal="() => (showTerminal = false)"
         v-if="showTerminal"
       />
-      <TerminalSection v-if="showTerminal" />
 
       <div
         v-else

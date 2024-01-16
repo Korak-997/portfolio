@@ -97,7 +97,8 @@
           />
           <Icon
             icon="akar-icons:cross"
-            class="bg-secondary rounded-full m-1 p-1 text-lg"
+            class="bg-secondary rounded-full m-1 p-1 text-lg cursor-pointer hover:bg-error"
+            @click="$emit('closeTerminal')"
           />
         </div>
       </div>
