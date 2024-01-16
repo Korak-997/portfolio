@@ -75,8 +75,8 @@
 <style scoped>
   .toggle {
     background-color: var(--background);
-    width: 56px;
-    height: 56px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: grid;
     place-items: center;
