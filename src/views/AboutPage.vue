@@ -60,7 +60,7 @@
   };
 </script>
 <template>
-  <div
+  <!-- <div
     class="timeline"
     v-for="story in stories"
     :key="story.key"
@@ -77,161 +77,34 @@
         {{ $t(`${story.des}`) }}
       </p>
     </div>
-  </div>
+  </div> -->
+
+  <ul
+    class="p-4 lg:p-8"
+    v-for="story in stories"
+    :key="story.key"
+  >
+    <li>
+      <article
+        class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
+      >
+        <h3
+          class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-2xl text-primary"
+        >
+          {{ $t(`${story.title}`) }}
+        </h3>
+        <time
+          datetime=""
+          class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-2xl text-accent"
+          >{{ $t(`${story.date}`) }}</time
+        >
+        <p
+          class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0"
+          v-if="story.des"
+        >
+          {{ $t(`${story.des}`) }}
+        </p>
+      </article>
+    </li>
+  </ul>
 </template>
-<style lang="scss" scoped>
-  $color: #4ca626;
-  $lineColor: #4ca626;
-  $fontColor: #bbb;
-  $bgColor1: #222;
-  $bgColor2: #444;
-  $yearBgColor: #333;
-
-  $breakpoint: 700px;
-
-  h1 {
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .timeline {
-    position: relative;
-    padding: 1rem;
-    margin: 0 auto;
-    max-width: 1300px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      border: 1px solid $lineColor;
-      right: 40px;
-      top: 0;
-    }
-
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    @media screen and (min-width: $breakpoint) {
-      padding: 2rem;
-      &:before {
-        left: calc(50% - 1px);
-        right: auto;
-      }
-    }
-    @media screen and (max-width: $breakpoint) {
-      &:before {
-        content: "";
-        height: 0;
-        border: none;
-        right: 0;
-        top: 0;
-      }
-    }
-  }
-
-  .timeline__item {
-    padding: 1rem;
-    border: 2px solid $lineColor;
-    border-image: linear-gradient(to right, $color 0%, $lineColor 100%);
-    border-image-slice: 1;
-    position: relative;
-    margin: 1rem 3rem 1rem 1rem;
-    clear: both;
-
-    &:after,
-    &:before {
-      content: "";
-      position: absolute;
-    }
-
-    &:before {
-      right: -10px;
-      top: calc(50% - 5px);
-      border-style: solid;
-      border-color: $lineColor $lineColor transparent transparent;
-      border-width: 10px;
-      transform: rotate(45deg);
-    }
-
-    @media screen and (min-width: $breakpoint) {
-      width: 44%;
-      margin: 1rem;
-
-      &:nth-of-type(2n) {
-        float: right;
-        margin: 1rem;
-        border-image: linear-gradient(to right, $lineColor 0%, $color 100%);
-        border-image-slice: 1;
-
-        &:before {
-          right: auto;
-          left: -10px;
-          border-color: transparent transparent $lineColor $lineColor;
-        }
-      }
-    }
-    @media screen and (max-width: $breakpoint) {
-      &:before {
-        right: 0;
-        top: 0;
-        border-style: none;
-      }
-    }
-  }
-
-  .timeline__item--year {
-    text-align: center;
-    max-width: 150px;
-    margin: 0 48px 0 auto;
-    background-color: $yearBgColor;
-    line-height: 1;
-    border-image: none;
-    padding: 0.5rem 1rem 1rem;
-
-    &:before {
-      display: none;
-    }
-
-    @media screen and (min-width: $breakpoint) {
-      text-align: center;
-      margin: 0 auto;
-
-      &:nth-of-type(2n) {
-        float: none;
-        margin: 0 auto;
-        border-image: none;
-
-        &:before {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .timeline__title {
-    margin: 0;
-    font-size: 1.5em;
-  }
-
-  .timeline__blurb {
-    line-height: 1.5;
-    font-size: 1rem;
-    margin: 0.5rem 0 0;
-  }
-
-  @media screen and (max-width: $breakpoint) {
-    .timeline__item {
-      float: right;
-      clear: none;
-      margin: 1rem;
-    }
-    .timeline__item--year {
-      margin: 0 auto;
-      float: none;
-    }
-  }
-</style>
