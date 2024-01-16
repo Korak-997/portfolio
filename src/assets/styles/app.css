@@ -9,17 +9,17 @@
 
 :root[data-theme="light"] {
   --text: #032103;
-  --background: #e7e9e7;
+  --background: #fefeff;
   --primary: #7fd959;
-  --secondary: #b9e2f8;
-  --accent: #644ebc;
+  --secondary: #e6995e;
+  --accent: #a11ed9;
 }
 :root[data-theme="dark"] {
   --text: #defcde;
-  --background: #161816;
+  --background: #0e1316;
   --primary: #4ca626;
-  --secondary: #073046;
-  --accent: #5943b1;
+  --secondary: #e6995e;
+  --accent: #bd41f2;
 }
 
 body {

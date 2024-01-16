@@ -1,7 +1,6 @@
 <script>
   export default {
-    name: "Timeline",
-
+    name: "HomePage",
     data() {
       return {
         stories: [
@@ -56,35 +55,56 @@
         ],
       };
     },
+    components: {},
+    methods: {},
   };
 </script>
-
 <template>
-  <ol
-    class="border-l-2 border-accent w-11/12"
+  <!-- <div
+    class="timeline"
+    v-for="story in stories"
+    :key="story.key"
+  >
+    <h2 class="timeline__item timeline__item--year">
+      {{ $t(`${story.date}`) }}
+    </h2>
+    <div class="timeline__item">
+      <h3 class="timeline__title">{{ $t(`${story.title}`) }}</h3>
+      <p
+        v-if="story.des"
+        class="mb-4 mt-2 text-neutral-600 dark:text-neutral-300"
+      >
+        {{ $t(`${story.des}`) }}
+      </p>
+    </div>
+  </div> -->
+
+  <ul
+    class="p-4 lg:p-8"
     v-for="story in stories"
     :key="story.key"
   >
     <li>
-      <div class="flex-start flex items-center">
-        <div
-          class="-ml-[9px] -mt-2 mr-3 flex h-4 w-4 items-center justify-center rounded-full bg-accent"
-        ></div>
-        <h1 class="-mt-4 md:text-4xl text-xl font-bold text-center">
+      <article
+        class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
+      >
+        <h3
+          class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-2xl text-primary"
+        >
           {{ $t(`${story.title}`) }}
-        </h1>
-      </div>
-      <div class="mb-6 ml-6 pb-6 w-11/12">
-        <p class="text-2xl md:text-4xl text-primary">
-          {{ $t(`${story.date}`) }}
-        </p>
+        </h3>
+        <time
+          datetime=""
+          class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-2xl text-accent"
+          >{{ $t(`${story.date}`) }}</time
+        >
         <p
+          class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0"
           v-if="story.des"
-          class="mb-4 mt-2 text-neutral-600 dark:text-neutral-300"
         >
           {{ $t(`${story.des}`) }}
         </p>
-      </div>
+      </article>
     </li>
-  </ol>
+  </ul>
 </template>

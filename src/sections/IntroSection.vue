@@ -58,7 +58,7 @@
       />
       <CustBtn
         :text="'common.readMore'"
-        :link="'#timeline'"
+        :link="'/about'"
       />
     </div>
     <SocialsBar :onlyIcon="true" />

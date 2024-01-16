@@ -7,13 +7,13 @@ module.exports = {
         dark: {
           primary: "#4ca626",
 
-          secondary: "#073046",
+          secondary: "#e6995e",
 
-          accent: "#5943b1",
+          accent: "#bd41f2",
 
           neutral: "#defcde",
 
-          "base-100": "#161816",
+          "base-100": "#0e1316",
 
           info: "#576fd1",
 
@@ -25,15 +25,10 @@ module.exports = {
         },
         light: {
           primary: "#7fd959",
-
-          secondary: "#b9e2f8",
-
-          accent: "#644ebc",
-
+          secondary: "#E6995E",
+          accent: "#A11ED9",
           neutral: "#032103",
-
-          "base-100": "#e7e9e7",
-
+          "base-100": "#FEFEFF",
           info: "#576fd1",
 
           success: "#218770",

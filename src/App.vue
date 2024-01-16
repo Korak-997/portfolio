@@ -1,6 +1,5 @@
 <script>
   import { RouterView } from "vue-router";
-  import FooterComponent from "./components/FooterComponent.vue";
   import NavbarComponent from "./components/NavbarComponent.vue";
   export default {
     name: "App",
@@ -9,7 +8,6 @@
     },
     components: {
       NavbarComponent,
-      FooterComponent,
       RouterView,
     },
   };
@@ -21,12 +19,5 @@
     <main>
       <RouterView />
     </main>
-    <FooterComponent />
   </div>
 </template>
-
-<style lang="scss" scoped>
-  main {
-    margin-bottom: 6rem;
-  }
-</style>
