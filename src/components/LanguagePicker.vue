@@ -33,7 +33,7 @@
 </script>
 
 <template>
-  <div class="dropdown dropdown-top text-center">
+  <div class="dropdown dropdown-bottom text-center">
     <label
       tabindex="0"
       class="btn btn-ghost rounded-btn hover:border-primary"

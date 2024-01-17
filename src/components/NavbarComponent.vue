@@ -18,10 +18,10 @@
       <Logo />
     </div>
     <div class="md:hidden">
-      <ThemeSwitcher />
+      <LanguagePicker />
     </div>
     <div class="md:hidden">
-      <LanguagePicker />
+      <ThemeSwitcher />
     </div>
   </div>
 </template>
