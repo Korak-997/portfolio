@@ -35,6 +35,9 @@
     "live": "Vorschau",
     "001": {
       "des": "Dream Style ist eine schöne und einfache Website für einen Friseursalon"
+    },
+    "002": {
+      "des": "MyBooks ist eine Progressive Web App (PWA), die Benutzern dabei helfen soll, ihre physische Bibliothek zu Hause zu verwalten. Die App wurde mit SvelteKit, Tailwind CSS und DaisyUI für das Styling erstellt und nutzt SupaBase für das Backend. Benutzer können ihre Buchsammlung verfolgen, einschließlich Details zu jedem Buch und seinem Autor. Die Anwendung ist so konzipiert, dass sie selbst gehostet werden kann, um Datenschutz und Kontrolle über persönliche Bibliotheksdaten zu gewährleisten."
     }
   },
   "intro": {
