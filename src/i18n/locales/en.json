@@ -36,6 +36,9 @@
     "docs": "Documentation",
     "001": {
       "des": "Dream Style is a nice and simple Website for a Barber Shop or Barber Salon"
+    },
+    "002": {
+      "des": "MyBooks is a Progressive Web App (PWA) designed to help users manage their physical library at home. Users can track their book collection, including details about each book and its author. The application is designed to be self-hosted, ensuring privacy and control over personal library data."
     }
   },
   "intro": {
