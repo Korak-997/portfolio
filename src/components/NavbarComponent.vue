@@ -17,10 +17,10 @@
     <div class="w-12">
       <Logo />
     </div>
-    <div class="md:hidden">
+    <div>
       <LanguagePicker />
     </div>
-    <div class="md:hidden">
+    <div>
       <ThemeSwitcher />
     </div>
   </div>
