@@ -59,7 +59,7 @@ export default createStore({
         links: [
           {
             name: "projects.live",
-            url: "my-books-seven.vercel.app",
+            url: "https://my-books-seven.vercel.app/",
           },
           {
             name: "Github",
