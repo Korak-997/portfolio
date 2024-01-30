@@ -18,7 +18,7 @@
     methods: {
       getImgPath(name) {
         return name
-          ? new URL("../assets/imgs/projects/" + name, import.meta.url)
+          ? new URL(`../assets/imgs/projects/${name}`, import.meta.url)
           : "";
       },
     },
