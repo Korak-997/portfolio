@@ -21,11 +21,11 @@
     </div>
     <div
       id="projects"
-      class="w-full h-screen flex items-center justify-around gap-10 flex-wrap my-6"
+      class="flex items-center justify-around gap-10 flex-wrap my-6"
     >
       <ProjectsSection />
     </div>
-    <div class="w-full h-screen">
+    <div class="">
       <SocialsSection id="socials" />
     </div>
   </div>
