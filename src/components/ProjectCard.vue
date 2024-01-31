@@ -33,6 +33,7 @@
       alt="Project image"
     />
 
+
     <h2 class="text-4xl font-semibold m-4">{{ project.title }}</h2>
     <div
       v-if="project.tags"
