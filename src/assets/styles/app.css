@@ -6,6 +6,9 @@
   src: url("/fonts/ADLaMDisplay-Regular.ttf");
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root[data-theme="light"] {
   --text: "#130405";
