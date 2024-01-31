@@ -8,18 +8,18 @@
 }
 
 :root[data-theme="light"] {
-  --text: #032103;
+  --text: "#130405";
   --background: #fefeff;
-  --primary: #7fd959;
-  --secondary: #e6995e;
-  --accent: #a11ed9;
+  --primary: "#75d19d";
+  --secondary: "#7558da";
+  --accent: "#3c69f1";
 }
 :root[data-theme="dark"] {
-  --text: #defcde;
-  --background: #0e1316;
-  --primary: #4ca626;
-  --secondary: #e6995e;
-  --accent: #bd41f2;
+  --text: "#fcffff";
+  --background: "#0d0e0c";
+  --primary: "#2E8B57";
+  --secondary: "#455D5C";
+  --accent: "#3c69f1";
 }
 
 body {

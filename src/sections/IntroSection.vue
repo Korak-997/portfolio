@@ -25,43 +25,48 @@
   };
 </script>
 <template>
-  <div class="flex items-center justify-around flex-col text-center gap-10">
+  <div class="flex items-center justify-around text-center gap-10 h-full">
     <div
-      class="container uppercase font-bold text-xl md:text-4xl flex items-center justify-evenly"
+      class="uppercase font-bold text-xl md:text-4xl flex items-center justify-around flex-col gap-6 h-full"
     >
-      <p>{{ $t("intro.hi") }}</p>
-      <section class="animation h-10 overflow-hidden">
-        <div
-          v-for="(title, idx) in titles"
-          :key="idx"
-          :class="colors[idx]"
-          class="text-center p-2 shadow-lg m-4"
+      <div>
+        <p>{{ $t("intro.hi") }}</p>
+        <section class="animation h-10 overflow-hidden">
+          <div
+            v-for="(title, idx) in titles"
+            :key="idx"
+            :class="colors[idx]"
+            class="text-center p-2 shadow-lg m-4"
+          >
+            <p>{{ title }}</p>
+          </div>
+        </section>
+      </div>
+      <h1 class="text-2xl md:text-4xl">
+        {{ $t("intro.currentlyWorking") }}
+        <a
+          href="https://www.sincnovation.com/en/"
+          class="text-2xl md:text-4xl cp-link"
+          target="-blank"
+          >SINC NOVATION</a
         >
-          <p>{{ title }}</p>
-        </div>
-      </section>
+      </h1>
+      <div class="flex items-center justify-around flex-wrap w-11/12">
+        <CustBtn
+          :text="'common.reachout'"
+          :link="'#socials'"
+        />
+        <CustBtn
+          :text="'common.readMore'"
+          :link="'/about'"
+        />
+        <CustBtn
+          :text="'common.projects'"
+          :link="'#projects'"
+        />
+      </div>
+      <SocialsBar :onlyIcon="true" />
     </div>
-
-    <h1 class="text-2xl md:text-4xl">
-      {{ $t("intro.currentlyWorking") }}
-      <a
-        href="https://www.sincnovation.com/en/"
-        class="text-2xl md:text-4xl cp-link"
-        target="-blank"
-        >SINC NOVATION</a
-      >
-    </h1>
-    <div class="flex items-center justify-around flex-wrap w-11/12">
-      <CustBtn
-        :text="'common.reachout'"
-        :link="'#socials'"
-      />
-      <CustBtn
-        :text="'common.readMore'"
-        :link="'/about'"
-      />
-    </div>
-    <SocialsBar :onlyIcon="true" />
   </div>
 </template>
 <style scoped lang="scss">
