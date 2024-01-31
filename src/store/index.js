@@ -21,7 +21,7 @@ export default createStore({
             color: "blue",
           },
         ],
-        images: { pc: "dream-style-pc.png", phone: "dream-style-phone.png" },
+        image: "dream-style.png",
         links: [
           {
             name: "projects.live",
@@ -37,7 +37,7 @@ export default createStore({
         id: "002",
         title: "My Books",
         description: "projects.002.des",
-        images: { pc: "my-books-pc.png", phone: "my-books-phone.png" },
+        image: "my-books.png",
         tags: [
           {
             name: "In Progress",

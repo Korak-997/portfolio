@@ -16,16 +16,16 @@
 </script>
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="w-11/12">
+    <div class="h-screen w-full">
       <IntroSection />
     </div>
     <div
       id="projects"
-      class="w-11/12 flex items-center justify-around gap-10 flex-wrap my-6"
+      class="w-full h-screen flex items-center justify-around gap-10 flex-wrap my-6"
     >
       <ProjectsSection />
     </div>
-    <div class="w-11/12">
+    <div class="w-full h-screen">
       <SocialsSection id="socials" />
     </div>
   </div>
