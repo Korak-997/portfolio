@@ -1,10 +1,9 @@
 <script>
   import CustBtn from "@/components/CustBtn.vue";
-  import SocialsBar from "@/components/SocialsBar.vue";
   import particlesConfig from "../assets/particles-js.json";
   export default {
     name: "IntroSection",
-    components: { CustBtn, SocialsBar },
+    components: { CustBtn },
     data() {
       return {
         configs: JSON.stringify(particlesConfig),
