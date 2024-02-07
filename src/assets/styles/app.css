@@ -10,22 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:root[data-theme="light"] {
-  --text: "#130405";
-  --background: #fefeff;
-  --primary: "#75d19d";
-  --secondary: "#7558da";
-  --accent: "#3c69f1";
-}
-:root[data-theme="dark"] {
-  --text: "#fcffff";
-  --background: "#0d0e0c";
-  --primary: "#2E8B57";
-  --secondary: "#455D5C";
-  --accent: "#3c69f1";
-}
-
 body {
   font-family: "adlam";
-  scroll-behavior: smooth;
 }
