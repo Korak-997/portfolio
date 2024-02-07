@@ -1,32 +1,59 @@
 <script>
   import CustBtn from "@/components/CustBtn.vue";
   import SocialsBar from "@/components/SocialsBar.vue";
-  import CodeScroll from "../components/CodeScroll.vue";
   export default {
     name: "IntroSection",
-    components: { CustBtn, SocialsBar, CodeScroll },
+    components: { CustBtn, SocialsBar },
   };
 </script>
 <template>
   <div
-    class="flex items-center justify-around flex-col text-center gap-4 h-full"
+    class="flex items-center justify-center flex-col text-center gap-20 h-full"
   >
-    <SocialsBar :onlyIcon="true" />
+    <div class="p-2">
+      <h1 class="text-xl md:text-4xl">
+        <span class="text-blue-600">&lt;h1</span>
+        <span class="text-cyan-500"> class</span> =
+        <span class="text-orange-600">"vip"</span>&gt;
+        <span class="text-neutral">{{ $t("intro.hi") }}</span
+        ><span class="text-blue-600">&lt;/h1&gt;</span>
+      </h1>
+      <h1 class="text-xl md:text-4xl">
+        <span class="text-neutral">puts</span>
+        <span class="text-orange-600"> "Fullstack Developer"</span>
+      </h1>
+      <h1 class="text-xl md:text-4xl">
+        <span class="text-purple-700">console</span
+        ><span class="text-neutral">.log(</span>
+        <span class="text-orange-600">"Frontend Developer"</span>
+        <span class="text-neutral">)</span>
+      </h1>
+      <h1 class="text-xl md:text-4xl">
+        <span class="text-green-600">print</span>
+        <span class="text-neutral">(</span>
+        <span class="text-orange-600">"Youtuber"</span>
+        <span class="text-neutral">)</span>
+      </h1>
+    </div>
+    <h1 class="text-xl md:text-4xl">
+      {{ $t("intro.currentlyWorking") }}
+      <a
+        href="https://www.sincnovation.com/en/"
+        class="text-2xl md:text-4xl cp-link"
+        target="-blank"
+        >SINC NOVATION</a
+      >
+    </h1>
     <div class="flex items-center justify-around flex-wrap w-11/12">
       <CustBtn
         :text="'common.reachout'"
         :link="'#socials'"
       />
       <CustBtn
-        :text="'common.readMore'"
-        :link="'/about'"
-      />
-      <CustBtn
         :text="'common.projects'"
         :link="'#projects'"
       />
     </div>
-    <CodeScroll />
   </div>
 </template>
 <style scoped lang="scss">
