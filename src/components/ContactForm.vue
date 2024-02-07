@@ -1,11 +1,13 @@
 <script>
   import FlashMsg from "./FlashMsg.vue";
+  import SocialsBar from "./SocialsBar.vue";
   import LoadingModal from "./LoadingModal.vue";
   export default {
     name: "ContactFom",
     components: {
       LoadingModal,
       FlashMsg,
+      SocialsBar,
     },
     data() {
       return {
@@ -62,13 +64,7 @@
       <h1 class="text-4xl md:text-6xl text-primary font-bold my-6">
         {{ $t("common.reachout") }}
       </h1>
-      <img
-        width="800"
-        height="450"
-        class="hidden md:block m-4 w-2/3"
-        src="@/assets/contact.svg"
-        alt="Reachout"
-      />
+      <SocialsBar :onlyIcon="false" />
     </div>
     <form @submit="send">
       <div class="form-control w-full max-w-lg">
