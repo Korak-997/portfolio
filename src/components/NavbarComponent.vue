@@ -30,6 +30,12 @@
       >
         {{ $t("common.reachout") }}
       </a>
+      <a
+        href="#about"
+        class="mx-4 text-primary hover:text-secondary active:text-secondary text-xl"
+      >
+        {{ $t("common.aboutMe") }}
+      </a>
     </div>
     <div class="w-16">
       <LanguagePicker />

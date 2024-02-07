@@ -1,6 +1,6 @@
 <script>
   export default {
-    name: "HomePage",
+    name: "AboutSection",
     data() {
       return {
         stories: [
@@ -60,32 +60,37 @@
   };
 </script>
 <template>
-  <ul
-    class="p-4 lg:p-8"
-    v-for="story in stories"
-    :key="story.key"
-  >
-    <li>
-      <article
-        class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
-      >
-        <h3
-          class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-2xl text-primary"
+  <div>
+    <h1 class="my-4 text-primary font-bold text-4xl md:text-6xl p-2">
+      {{ $t("common.aboutMe") }}
+    </h1>
+    <ul
+      class="p-4 lg:p-8"
+      v-for="story in stories"
+      :key="story.key"
+    >
+      <li>
+        <article
+          class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
         >
-          {{ $t(`${story.title}`) }}
-        </h3>
-        <time
-          datetime=""
-          class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-2xl text-accent"
-          >{{ $t(`${story.date}`) }}</time
-        >
-        <p
-          class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0"
-          v-if="story.des"
-        >
-          {{ $t(`${story.des}`) }}
-        </p>
-      </article>
-    </li>
-  </ul>
+          <h3
+            class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-2xl text-primary"
+          >
+            {{ $t(`${story.title}`) }}
+          </h3>
+          <time
+            datetime=""
+            class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-2xl text-accent"
+            >{{ $t(`${story.date}`) }}</time
+          >
+          <p
+            class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0"
+            v-if="story.des"
+          >
+            {{ $t(`${story.des}`) }}
+          </p>
+        </article>
+      </li>
+    </ul>
+  </div>
 </template>
