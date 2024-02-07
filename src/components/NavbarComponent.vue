@@ -17,10 +17,24 @@
     <div class="w-12">
       <Logo />
     </div>
-    <div>
+    <div class="lg:flex md:flex hidden items-center justify-around">
+      <a
+        href="#projects"
+        class="mx-4 text-primary hover:text-secondary active:text-secondary text-xl"
+      >
+        {{ $t("common.projects") }}
+      </a>
+      <a
+        href="#socials"
+        class="mx-4 text-primary hover:text-secondary active:text-secondary text-xl"
+      >
+        {{ $t("common.reachout") }}
+      </a>
+    </div>
+    <div class="w-16">
       <LanguagePicker />
     </div>
-    <div>
+    <div class="w-16">
       <ThemeSwitcher />
     </div>
   </div>

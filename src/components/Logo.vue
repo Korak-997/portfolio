@@ -15,8 +15,8 @@
       aria-label="Homepage_link"
     >
       <svg
-        width="70"
-        height="70"
+        width="40"
+        height="40"
         viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

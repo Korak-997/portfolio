@@ -1,6 +1,7 @@
 <script>
   import { RouterView } from "vue-router";
   import NavbarComponent from "./components/NavbarComponent.vue";
+  import FooterComponent from "./components/FooterComponent.vue";
   export default {
     name: "App",
     data() {
@@ -9,6 +10,7 @@
     components: {
       NavbarComponent,
       RouterView,
+      FooterComponent,
     },
   };
 </script>
@@ -19,5 +21,6 @@
     <main>
       <RouterView />
     </main>
+    <FooterComponent />
   </div>
 </template>
