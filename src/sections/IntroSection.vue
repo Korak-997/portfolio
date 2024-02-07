@@ -1,15 +1,35 @@
 <script>
   import CustBtn from "@/components/CustBtn.vue";
   import SocialsBar from "@/components/SocialsBar.vue";
+  import particlesConfig from "../assets/particles-js.json";
   export default {
     name: "IntroSection",
     components: { CustBtn, SocialsBar },
+    data() {
+      return {
+        configs: JSON.stringify(particlesConfig),
+      };
+    },
+    mounted() {
+      particlesJS.load("particles-js", JSON.stringify(this.configs));
+    },
   };
 </script>
 <template>
   <div
     class="flex items-center justify-center flex-col text-center gap-20 h-full"
   >
+    <input
+      type="hidden"
+      name="particles-config"
+      id="particles-config"
+      :value="configs"
+    />
+    <div
+      id="particles-js"
+      class="absolute w-full h-full"
+    ></div>
+
     <div class="p-2">
       <h1 class="text-xl md:text-4xl">
         <span class="text-blue-600">&lt;h1</span>
