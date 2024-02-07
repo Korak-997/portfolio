@@ -29,24 +29,24 @@
 </script>
 <template>
   <div
-    class="btm-nav lg:hidden md:hidden bg-base-300"
+    class="btm-nav lg:hidden md:hidden bg-base-100 text-neutral"
     :class="{ hidden: isGoingDown }"
   >
     <a
       href="#projects"
-      class="text-primary hover:text-secondary active:text-secondary text-4xl"
+      class="hover:text-secondary text-4xl"
     >
       <Icon icon="la:project-diagram" />
     </a>
     <a
       href="#socials"
-      class="text-primary hover:text-secondary active:text-secondary text-4xl"
+      class="hover:text-secondary text-4xl"
     >
       <Icon icon="grommet-icons:contact" />
     </a>
     <a
       href="#about"
-      class="text-primary hover:text-secondary active:text-secondary text-4xl"
+      class="hover:text-secondary text-4xl"
     >
       <Icon icon="fluent:person-info-20-regular" />
     </a>
