@@ -26,13 +26,15 @@
 </script>
 <template>
   <div
-    class="flex flex-col max-w-lg p-6 my-4 overflow-hidden rounded-lg shadow-sm shadow-neutral m-4"
+    class="flex flex-col max-w-lg p-6 my-4 overflow-hidden rounded-lg shadow-sm shadow-secondary m-4 items-center justify-center"
   >
     <img
       :src="getImgPath(project.image)"
       alt="Project image"
+      class="w-11/12"
+      width="200"
+      height="200"
     />
-
 
     <h2 class="text-4xl font-semibold m-4">{{ project.title }}</h2>
     <div
