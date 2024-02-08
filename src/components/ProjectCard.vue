@@ -1,6 +1,8 @@
 <script>
   import Badge from "./Badge.vue";
   import CustBtn from "./CustBtn.vue";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
   export default {
     name: "ProjectCard",
     props: {
@@ -22,10 +24,14 @@
           : "";
       },
     },
+    mounted() {
+      AOS.init();
+    },
   };
 </script>
 <template>
   <div
+    data-aos="fade-right"
     class="flex flex-col max-w-lg p-6 my-4 overflow-hidden rounded-lg shadow-sm shadow-secondary m-4 items-center justify-center"
   >
     <img
