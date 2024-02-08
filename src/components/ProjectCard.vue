@@ -1,6 +1,8 @@
 <script>
   import Badge from "./Badge.vue";
   import CustBtn from "./CustBtn.vue";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
   export default {
     name: "ProjectCard",
     props: {
@@ -22,10 +24,14 @@
           : "";
       },
     },
+    mounted() {
+      AOS.init();
+    },
   };
 </script>
 <template>
   <div
+    data-aos="fade-right"
     class="flex flex-col max-w-lg p-6 my-4 overflow-hidden rounded-lg shadow-sm shadow-secondary m-4 items-center justify-center"
   >
     <img
@@ -34,6 +40,7 @@
       class="w-11/12"
       width="200"
       height="200"
+      loading="lazy"
     />
 
     <h2 class="text-4xl font-semibold m-4">{{ project.title }}</h2>
@@ -49,7 +56,7 @@
       />
     </div>
     <p>{{ $t(`projects.${project.id}.des`) }}</p>
-    <div class="flex flex-wrap justify-between m-2">
+    <div class="flex flex-wrap justify-center items-center m-2">
       <CustBtn
         v-for="(link, idx) in project.links"
         :key="idx"

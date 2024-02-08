@@ -1,4 +1,6 @@
 <script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
   export default {
     name: "AboutSection",
     data() {
@@ -55,8 +57,9 @@
         ],
       };
     },
-    components: {},
-    methods: {},
+    mounted() {
+      AOS.init();
+    },
   };
 </script>
 <template>
@@ -69,7 +72,7 @@
       v-for="story in stories"
       :key="story.key"
     >
-      <li>
+      <li data-aos="zoom-in">
         <article
           class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
         >
