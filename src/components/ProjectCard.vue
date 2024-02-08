@@ -40,6 +40,7 @@
       class="w-11/12"
       width="200"
       height="200"
+      loading="lazy"
     />
 
     <h2 class="text-4xl font-semibold m-4">{{ project.title }}</h2>
