@@ -49,7 +49,7 @@
       />
     </div>
     <p>{{ $t(`projects.${project.id}.des`) }}</p>
-    <div class="flex flex-wrap justify-between m-2">
+    <div class="flex flex-wrap justify-center items-center m-2">
       <CustBtn
         v-for="(link, idx) in project.links"
         :key="idx"
