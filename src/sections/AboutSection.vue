@@ -64,7 +64,9 @@
 </script>
 <template>
   <div>
-    <h1 class="my-4 text-primary font-bold text-4xl md:text-6xl p-2">
+    <h1
+      class="my-4 text-primary font-bold text-4xl md:text-6xl p-2 text-center"
+    >
       {{ $t("common.aboutMe") }}
     </h1>
     <ul

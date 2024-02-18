@@ -54,15 +54,6 @@
         <span class="text-neutral">)</span>
       </h1>
     </div>
-    <h1 class="text-xl md:text-4xl">
-      {{ $t("intro.currentlyWorking") }}
-      <a
-        href="https://www.sincnovation.com/en/"
-        class="text-2xl md:text-4xl cp-link"
-        target="-blank"
-        >SINC NOVATION</a
-      >
-    </h1>
     <div class="flex items-center justify-around flex-wrap w-11/12">
       <CustBtn
         :text="'common.reachout'"

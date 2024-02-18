@@ -2,6 +2,7 @@
   import Badge from "./Badge.vue";
   import CustBtn from "./CustBtn.vue";
   import AOS from "aos";
+  import MockUp from "./MockUp.vue";
   import "aos/dist/aos.css";
   export default {
     name: "ProjectCard",
@@ -11,19 +12,14 @@
     components: {
       Badge,
       CustBtn,
+      MockUp,
     },
     data() {
       return {
         showModal: false,
       };
     },
-    methods: {
-      getImgPath(name) {
-        return name
-          ? new URL(`../assets/imgs/projects/${name}`, import.meta.url)
-          : "";
-      },
-    },
+    methods: {},
     mounted() {
       AOS.init();
     },
@@ -32,18 +28,24 @@
 <template>
   <div
     data-aos="fade-right"
-    class="flex flex-col max-w-lg p-6 my-4 overflow-hidden rounded-lg shadow-sm shadow-secondary m-4 items-center justify-center"
+    class="product bg-transparent m-4 w-96 flex items-center justify-center flex-col border border-neutral p-4 rounded-md"
   >
-    <img
-      :src="getImgPath(project.image)"
-      alt="Project image"
-      class="w-11/12"
-      width="200"
-      height="200"
-      loading="lazy"
+    <MockUp
+      name="pc"
+      :img="project.images.pc"
     />
-
-    <h2 class="text-4xl font-semibold m-4">{{ project.title }}</h2>
+    <div class="flex items-center justify-between">
+      <MockUp
+        name="tablet"
+        :img="project.images.tablet"
+      />
+      <MockUp
+        name="phone"
+        :img="project.images.phone"
+      />
+    </div>
+    <h1 class="text-4xl font-semibold m-4">{{ project.title }}</h1>
+    <p>{{ $t(`projects.${project.id}.des`) }}</p>
     <div
       v-if="project.tags"
       class="flex items-center justify-around w-11/12 flex-wrap"
@@ -55,8 +57,7 @@
         :color="tag.color"
       />
     </div>
-    <p>{{ $t(`projects.${project.id}.des`) }}</p>
-    <div class="flex flex-wrap justify-center items-center m-2">
+    <div class="flex flex-wrap justify-center items-center m-2 w-full">
       <CustBtn
         v-for="(link, idx) in project.links"
         :key="idx"
