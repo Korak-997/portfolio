@@ -166,7 +166,7 @@
           <rect
             width="491.30099"
             height="289.6749"
-            fill="#bcbcbc"
+            fill="#ffffff"
             id="rect9"
             x="147.653"
             y="39.1078"
@@ -353,7 +353,7 @@
           <rect
             width="112.132"
             height="243.56599"
-            fill="#bcbcbc"
+            fill="#ffffff"
             id="rect11"
             x="45.08709"
             y="27.716894"
