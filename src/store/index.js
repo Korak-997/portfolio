@@ -21,11 +21,7 @@ export default createStore({
             color: "blue",
           },
         ],
-        images: {
-          pc: "dreamstyle-pc.webp",
-          tablet: "dreamstyle-tablet.webp",
-          phone: "dreamstyle-phone.webp",
-        },
+        img: "dreamstyle.webp",
         links: [
           {
             name: "projects.live",
@@ -41,11 +37,7 @@ export default createStore({
         id: "002",
         title: "My Books",
         description: "projects.002.des",
-        images: {
-          pc: "mybooks-pc.webp",
-          tablet: "mybooks-tablet.webp",
-          phone: "mybooks-phone.webp",
-        },
+        img: "mybooks.webp",
         tags: [
           {
             name: "In Progress",

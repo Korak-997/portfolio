@@ -14,7 +14,7 @@
 </script>
 <template>
   <div class="flex items-center justify-around flex-col bg-pattern">
-    <h1 class="my-4 text-primary font-bold text-4xl md:text-6xl p-2">
+    <h1 class="my-4 text-white font-bold text-4xl md:text-6xl p-2">
       {{ $t("projects.title") }}
     </h1>
     <div class="flex items-center justify-around flex-wrap mx-auto w-11/12">
