@@ -28,7 +28,7 @@
 <template>
   <div
     data-aos="fade-right"
-    class="product bg-transparent m-4 w-96 flex items-center justify-center flex-col border border-neutral p-4 rounded-md"
+    class="product m-4 w-96 flex items-center justify-center flex-col p-4 rounded-md backdrop-blur-2xl bg-transparent px-4 py-2 shadow-xl"
   >
     <MockUp
       name="pc"

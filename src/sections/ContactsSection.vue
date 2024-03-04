@@ -51,7 +51,7 @@
 </script>
 <template>
   <div
-    class="flex items-center justify-around flex-wrap gap-4 my-6 w-11/12 text-center"
+    class="flex items-center justify-around flex-wrap gap-4 my-6 w-full text-center bg-pattern"
   >
     <FlashMsg
       :text="flashText"
@@ -64,13 +64,16 @@
     />
     <div>
       <h1
-        class="text-4xl md:text-6xl text-primary font-bold my-6 text-center w-full"
+        class="text-4xl md:text-6xl text-neutral font-bold my-6 text-center w-full"
       >
         {{ $t("common.reachout") }}
       </h1>
       <SocialsBar :onlyIcon="false" />
     </div>
-    <form @submit="send">
+    <form
+      @submit="send"
+      class="backdrop-blur-2xl bg-transparent px-4 py-2 shadow-xl"
+    >
       <div class="form-control w-full max-w-lg">
         <label
           class="label"

@@ -13,7 +13,7 @@
   };
 </script>
 <template>
-  <div class="flex items-center justify-around flex-col">
+  <div class="flex items-center justify-around flex-col bg-pattern">
     <h1 class="my-4 text-primary font-bold text-4xl md:text-6xl p-2">
       {{ $t("projects.title") }}
     </h1>
