@@ -17,7 +17,7 @@
     <h1 class="my-4 text-primary font-bold text-4xl md:text-6xl p-2">
       {{ $t("projects.title") }}
     </h1>
-    <div class="flex items-center justify-around flex-wrap p-4 w-full">
+    <div class="flex items-center justify-around flex-wrap mx-auto w-11/12">
       <ProjectCard
         :project="project"
         v-for="project in projects"
