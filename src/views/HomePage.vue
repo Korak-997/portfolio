@@ -23,7 +23,7 @@
     </div>
     <div
       id="projects"
-      class="flex items-center justify-center flex-wrap my-6"
+      class="w-full"
     >
       <ProjectsSection />
     </div>
