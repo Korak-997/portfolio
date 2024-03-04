@@ -17,13 +17,13 @@
   };
 </script>
 <template>
-  <div class="flex flex-col items-center justify-center">
-    <div class="h-screen w-full">
+  <div class="flex flex-col items-center justify-center w-full">
+    <div class="h-screen">
       <IntroSection />
     </div>
     <div
       id="projects"
-      class="flex items-center justify-around gap-10 flex-wrap my-6"
+      class="w-full"
     >
       <ProjectsSection />
     </div>

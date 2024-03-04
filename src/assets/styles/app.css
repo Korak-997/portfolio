@@ -13,3 +13,8 @@ html {
 body {
   font-family: "adlam";
 }
+
+.bg-pattern {
+  background-color: #1a1a1a;
+  background-image: url("../topography.svg");
+}

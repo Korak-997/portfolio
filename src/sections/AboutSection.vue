@@ -63,9 +63,9 @@
   };
 </script>
 <template>
-  <div>
+  <div class="bg-pattern">
     <h1
-      class="my-4 text-primary font-bold text-4xl md:text-6xl p-2 text-center"
+      class="my-4 text-neutral font-bold text-4xl md:text-6xl p-2 text-center"
     >
       {{ $t("common.aboutMe") }}
     </h1>
@@ -76,7 +76,7 @@
     >
       <li data-aos="zoom-in">
         <article
-          class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 bg-base-200 shadow-xl"
+          class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 shadow-xl backdrop-blur-2xl bg-transparent"
         >
           <h3
             class="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 text-2xl text-primary"

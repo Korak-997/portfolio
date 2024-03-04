@@ -2,7 +2,6 @@
   import Badge from "./Badge.vue";
   import CustBtn from "./CustBtn.vue";
   import AOS from "aos";
-  import MockUp from "./MockUp.vue";
   import "aos/dist/aos.css";
   export default {
     name: "ProjectCard",
@@ -12,14 +11,19 @@
     components: {
       Badge,
       CustBtn,
-      MockUp,
     },
     data() {
       return {
         showModal: false,
       };
     },
-    methods: {},
+    methods: {
+      getImgPath(name) {
+        return name
+          ? new URL(`../assets/ScreenShots/${name}`, import.meta.url)
+          : "";
+      },
+    },
     mounted() {
       AOS.init();
     },
@@ -28,22 +32,13 @@
 <template>
   <div
     data-aos="fade-right"
-    class="product bg-transparent m-4 w-96 flex items-center justify-center flex-col border border-neutral p-4 rounded-md"
+    class="product m-4 w-96 flex items-center justify-center flex-col rounded-md backdrop-blur-2xl bg-transparent shadow-xl"
   >
-    <MockUp
-      name="pc"
-      :img="project.images.pc"
+    <img
+      :src="getImgPath(project.img)"
+      alt="project preview"
     />
-    <div class="flex items-center justify-between">
-      <MockUp
-        name="tablet"
-        :img="project.images.tablet"
-      />
-      <MockUp
-        name="phone"
-        :img="project.images.phone"
-      />
-    </div>
+
     <h1 class="text-4xl font-semibold m-4">{{ project.title }}</h1>
     <p>{{ $t(`projects.${project.id}.des`) }}</p>
     <div

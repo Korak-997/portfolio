@@ -1,13 +1,11 @@
 <script>
   import LanguagePicker from "./LanguagePicker.vue";
   import Logo from "./Logo.vue";
-  import ThemeSwitcher from "./ThemeSwitcher.vue";
   export default {
     name: "NavbarComponent",
 
     components: {
       Logo,
-      ThemeSwitcher,
       LanguagePicker,
     },
   };
@@ -39,9 +37,6 @@
     </div>
     <div class="w-16">
       <LanguagePicker />
-    </div>
-    <div class="w-16">
-      <ThemeSwitcher />
     </div>
   </div>
 </template>
