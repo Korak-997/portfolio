@@ -31,6 +31,11 @@
             icon: "mdi:linkedin",
             url: "https://linkedin.com/in/korak-kurani-94351b235",
           },
+          {
+            title: "Coursera",
+            icon: "simple-icons:coursera",
+            url: "https://www.coursera.org/learner/korak-kurani",
+          },
         ],
       };
     },
@@ -101,6 +106,11 @@
       background: #0072b1;
       color: snow;
       box-shadow: 0 0 10px #0072b1;
+    }
+    &:nth-child(5):hover {
+      background: #0056d2;
+      color: snow;
+      box-shadow: 0 0 10px #0056d2;
     }
   }
 </style>
