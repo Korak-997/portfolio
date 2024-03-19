@@ -63,7 +63,7 @@
   };
 </script>
 <template>
-  <div class="bg-pattern">
+  <div>
     <h1
       class="my-4 text-neutral font-bold text-4xl md:text-6xl p-2 text-center"
     >
