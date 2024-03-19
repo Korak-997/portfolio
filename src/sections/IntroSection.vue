@@ -1,15 +1,9 @@
 <script>
   import CustBtn from "@/components/CustBtn.vue";
-  import particlesConfig from "../assets/particles-js.json";
   import TextScramble from "../scrimble";
   export default {
     name: "IntroSection",
     components: { CustBtn },
-    data() {
-      return {
-        configs: JSON.stringify(particlesConfig),
-      };
-    },
     mounted() {
       const phrases = ["Korak", "Fullstack Developer", "Youtuber"];
       const el = document.querySelector(".text");

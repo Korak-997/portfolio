@@ -51,7 +51,7 @@
 </script>
 <template>
   <div
-    class="flex items-center justify-around flex-wrap gap-4 my-6 w-full text-center bg-pattern"
+    class="flex items-center justify-around flex-wrap gap-4 my-6 w-full text-center"
   >
     <FlashMsg
       :text="flashText"
