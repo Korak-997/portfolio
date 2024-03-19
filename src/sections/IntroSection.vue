@@ -11,13 +11,7 @@
       };
     },
     mounted() {
-
-      const phrases = [
-        "Korak",
-        "Fullstack Developer",
-        "Youtuber",
-        "Kurdish Guy",
-      ];
+      const phrases = ["Korak", "Fullstack Developer", "Youtuber"];
       const el = document.querySelector(".text");
       const fx = new TextScramble(el);
       let counter = 0;
