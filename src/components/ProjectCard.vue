@@ -58,6 +58,7 @@
         :key="idx"
         :text="$t(`${link.name}`)"
         :link="link.url"
+        colorClasses="hover:text-secondary before:bg-secondary after:bg-cyan-600 hover:border-cyan-600 w-11/12"
         out
       />
     </div>
