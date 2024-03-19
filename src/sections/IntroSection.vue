@@ -36,10 +36,12 @@
       <CustBtn
         :text="'common.reachout'"
         :link="'#socials'"
+        colorClasses="hover:text-primary before:bg-primary after:bg-indigo-500 hover:border-indigo-500"
       />
       <CustBtn
         :text="'common.projects'"
         :link="'#projects'"
+        colorClasses="hover:text-secondary before:bg-secondary after:bg-cyan-600 hover:border-cyan-600"
       />
     </div>
   </div>
