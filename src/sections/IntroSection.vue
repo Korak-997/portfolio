@@ -11,7 +11,7 @@
       };
     },
     mounted() {
-      particlesJS.load("particles-js", JSON.stringify(this.configs));
+
       const phrases = [
         "Korak",
         "Fullstack Developer",
@@ -35,16 +35,6 @@
   <div
     class="flex items-center justify-center flex-col text-center gap-20 h-full"
   >
-    <input
-      type="hidden"
-      name="particles-config"
-      id="particles-config"
-      :value="configs"
-    />
-    <div
-      id="particles-js"
-      class="absolute w-full h-full"
-    ></div>
     <h1 class="text-6xl font-extrabold">{{ $t("intro.hi") }}</h1>
     <div class="text text-4xl md:text-4xl lg:text-4xl"></div>
 
