@@ -133,6 +133,26 @@ export default createStore({
             color: "blue",
           },
         ],
+        techstack: [
+          {
+            icon: "devicon:vuejs",
+          },
+          {
+            icon: "devicon:html5",
+          },
+          {
+            icon: "devicon:css3",
+          },
+          {
+            icon: "logos:javascript",
+          },
+          {
+            icon: "mdi:github",
+          },
+          {
+            icon: "devicon:git",
+          },
+        ],
         img: "dreamstyle.webp",
         links: [
           {
@@ -150,6 +170,29 @@ export default createStore({
         title: "My Books",
         description: "projects.002.des",
         img: "mybooks.webp",
+        techstack: [
+          {
+            icon: "devicon:svelte",
+          },
+          {
+            icon: "devicon:supabase",
+          },
+          {
+            icon: "devicon:html5",
+          },
+          {
+            icon: "devicon:css3",
+          },
+          {
+            icon: "logos:javascript",
+          },
+          {
+            icon: "mdi:github",
+          },
+          {
+            icon: "devicon:git",
+          },
+        ],
         tags: [
           {
             name: "In Progress",

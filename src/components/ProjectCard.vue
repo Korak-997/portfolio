@@ -2,6 +2,7 @@
   import Badge from "./Badge.vue";
   import CustBtn from "./CustBtn.vue";
   import AOS from "aos";
+  import { Icon } from "@iconify/vue";
   import "aos/dist/aos.css";
   export default {
     name: "ProjectCard",
@@ -11,6 +12,7 @@
     components: {
       Badge,
       CustBtn,
+      Icon,
     },
     data() {
       return {
@@ -52,6 +54,21 @@
         :color="tag.color"
       />
     </div>
+    <div
+      v-if="project.techstack"
+      class="my-4"
+    >
+      <h3 class="my-2 text-2xl">{{ $t("projects.tech") }}</h3>
+      <div class="flex items-center gap-4 justify-around w-11/12 flex-wrap">
+        <Icon
+          v-for="tech in project.techstack"
+          :key="tech.icon"
+          :icon="tech.icon"
+          class="text-4xl"
+        />
+      </div>
+    </div>
+
     <div class="flex flex-wrap justify-center items-center m-2 w-full">
       <CustBtn
         v-for="(link, idx) in project.links"
