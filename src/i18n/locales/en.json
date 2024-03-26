@@ -33,6 +33,7 @@
   "projects": {
     "title": "Projects",
     "live": "Preview",
+    "tech": "Techstack",
 
     "docs": "Documentation",
     "001": {
@@ -83,7 +84,7 @@
     }
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills and Techstack"
   },
   "reachout": {
     "title": "Reach out"
