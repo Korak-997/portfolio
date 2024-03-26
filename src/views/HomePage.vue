@@ -4,6 +4,7 @@
   import SocialsSection from "../sections/ContactsSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
   import AboutSection from "../sections/AboutSection.vue";
+  import SkillsSection from "../sections/SkillsSection.vue";
 
   export default {
     name: "HomePage",
@@ -13,6 +14,7 @@
       SocialsSection,
       ProjectsSection,
       AboutSection,
+      SkillsSection,
     },
   };
 </script>
@@ -20,6 +22,9 @@
   <div class="flex flex-col items-center justify-center w-full">
     <div class="h-screen">
       <IntroSection />
+    </div>
+    <div>
+      <SkillsSection />
     </div>
     <div
       id="projects"
