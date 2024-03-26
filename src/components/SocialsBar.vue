@@ -31,11 +31,6 @@
             icon: "mdi:linkedin",
             url: "https://linkedin.com/in/korak-kurani-94351b235",
           },
-          {
-            title: "Coursera",
-            icon: "simple-icons:coursera",
-            url: "https://www.coursera.org/learner/korak-kurani",
-          },
         ],
       };
     },
