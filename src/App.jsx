@@ -1,5 +1,6 @@
 import Logo from "@/assets/logo.webp";
 import { Icon } from "@iconify/react";
+import IntroSection from "./sections/Intro";
 function App() {
   return (
     <div className="w-full flex items-center justify-around flex-col gap-6">
@@ -30,7 +31,7 @@ function App() {
           </a>
         </div>
       </nav>
-
+      <IntroSection />
       <footer className="flex lg:hidden md:hidden items-center justify-between w-full h-16 absolute bottom-0 z-10">
         <a
           href="#projects"
