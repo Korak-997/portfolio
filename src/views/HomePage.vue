@@ -19,7 +19,7 @@
   };
 </script>
 <template>
-  <div class="flex flex-col items-center justify-center w-full">
+  <div class="flex flex-col items-center justify-center w-full gap-20">
     <div class="h-screen">
       <IntroSection />
     </div>
@@ -28,7 +28,7 @@
     </div>
     <div
       id="projects"
-      class="w-full"
+      class="w-full h-screen"
     >
       <ProjectsSection />
     </div>
