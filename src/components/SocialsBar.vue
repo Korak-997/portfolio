@@ -8,31 +8,10 @@
     components: {
       Icon,
     },
-    data() {
-      return {
-        socials: [
-          {
-            title: "Github",
-            icon: "mdi:github",
-            url: "https://github.com/Korak-997",
-          },
-          {
-            title: "Instagram",
-            icon: "mdi:instagram",
-            url: "https://www.instagram.com/korak997/",
-          },
-          {
-            title: "Youtube",
-            icon: "mdi:youtube",
-            url: "https://www.youtube.com/@k97media",
-          },
-          {
-            title: "LinkedIn",
-            icon: "mdi:linkedin",
-            url: "https://linkedin.com/in/korak-kurani-94351b235",
-          },
-        ],
-      };
+    computed: {
+      socials() {
+        return this.$store.getters.getSocials;
+      },
     },
   };
 </script>

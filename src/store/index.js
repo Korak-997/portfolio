@@ -2,6 +2,28 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    socials: [
+      {
+        title: "Github",
+        icon: "mdi:github",
+        url: "https://github.com/Korak-997",
+      },
+      {
+        title: "Instagram",
+        icon: "mdi:instagram",
+        url: "https://www.instagram.com/korak997/",
+      },
+      {
+        title: "Youtube",
+        icon: "mdi:youtube",
+        url: "https://www.youtube.com/@k97media",
+      },
+      {
+        title: "LinkedIn",
+        icon: "mdi:linkedin",
+        url: "https://linkedin.com/in/korak-kurani-94351b235",
+      },
+    ],
     skills: [
       {
         name: "Github",
@@ -227,5 +249,6 @@ export default createStore({
   getters: {
     getProjects: (state) => state.projects,
     getSkills: (state) => state.skills,
+    getSocials: (state) => state.socials,
   },
 });
