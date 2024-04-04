@@ -29,7 +29,7 @@
 </script>
 <template>
   <div
-    class="btm-nav lg:hidden md:hidden bg-base-100 text-neutral"
+    class="btm-nav lg:hidden md:hidden bg-base-100 text-neutral z-50"
     :class="{ hidden: isGoingDown }"
   >
     <a

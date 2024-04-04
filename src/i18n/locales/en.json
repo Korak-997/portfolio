@@ -48,41 +48,7 @@
     "coding": "Programming is passion not a job!",
     "currentlyWorking": "I Currently work at "
   },
-  "timeline": {
-    "title": "My Life Timeline",
-    "first": {
-      "title": "Origin",
-      "des": "born and raised in the city of Al-Sulaimanya in Iraqi Kurdistan"
-    },
-    "second": {
-      "title": "leaving home",
-      "des": "looking for a better future perspective"
-    },
-    "third": {
-      "title": "arrival in Germany",
-      "des": ""
-    },
-    "fourth": {
-      "title": "Completion of a German course",
-      "des": "certificate B2 level"
-    },
-    "fifth": {
-      "title": "Start self-study as a developer",
-      "des": "Parallel to my German course, I learned how to program myself."
-    },
-    "sixth": {
-      "title": "start of Apprenticeship",
-      "des": "in August 2020 started my Apprenticeship as a Software developer"
-    },
-    "seventh": {
-      "title": "Creation of my YOUTUBE channel",
-      "des": "with the aim of supporting the people in my home country with my knowledge and experience"
-    },
-    "eighth": {
-      "title": "Starting my Full-time position as Data Processor",
-      "des": "After three years of Apprenticeship and a lot of self learning, i finally got a Full-time position as Data Processor in Sinc Novation"
-    }
-  },
+
   "skills": {
     "title": "Skills and Techstack"
   },

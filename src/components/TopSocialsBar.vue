@@ -1,58 +1,57 @@
 <script>
   import { Icon } from "@iconify/vue";
+
   export default {
-    name: "SocialsBar",
-    props: {
-      onlyIcon: Boolean,
-    },
-    components: {
-      Icon,
+    name: "TopSocialsBar",
+
+    data() {
+      return {
+        isGoingDown: false,
+      };
     },
     computed: {
       socials() {
         return this.$store.getters.getSocials;
       },
     },
+    components: {
+      Icon,
+    },
+    mounted() {
+      let oldScrollY = window.scrollY;
+      // Attach the scroll event listener when the component is mounted
+      window.addEventListener("scroll", () => {
+        this.isGoingDown = oldScrollY < window.scrollY;
+        oldScrollY = window.scrollY;
+      });
+
+      // Clean up the event listener when the component is destroyed
+      return () => {
+        window.removeEventListener("scroll");
+      };
+    },
   };
 </script>
 <template>
   <div
-    class="w-11/12 flex items-center justify-around flex-wrap gap-2 md:gap-6 md:my-6"
+    class="text-neutral flex items-center justify-around w-full p-2 fixed top-0 left-0 h-24 z-50 backdrop-blur-md backdrop-brightness-50"
+    :class="{ hidden: !isGoingDown }"
   >
-    <li
+    <a
       v-for="social in socials"
       :key="social.title"
-      class="list-none rounded-full p-2"
+      :href="social.url"
+      target="_blank"
+      class="text-4xl social-icon p-4 rounded-full"
+      rel="noopener noreferrer"
+      :aria-label="social.title"
     >
-      <a
-        class="text-6xl"
-        :href="social.url"
-        target="_blank"
-        :aria-label="social.title"
-        v-if="onlyIcon"
-        rel="noopener noreferrer"
-      >
-        <Icon :icon="social.icon" />
-      </a>
-      <a
-        class="uppercase relative text-4xl font-bold flex items-center justify-between"
-        :href="social.url"
-        target="_blank"
-        :aria-label="social.title"
-        rel="noopener noreferrer"
-        v-else
-      >
-        <Icon
-          :icon="social.icon"
-          class="mx-2"
-        />
-        {{ social.title }}
-      </a>
-    </li>
+      <Icon :icon="social.icon" />
+    </a>
   </div>
 </template>
 <style lang="scss" scoped>
-  li {
+  .social-icon {
     transition: all ease-in-out 0.4s;
     &:nth-child(1):hover {
       background: #000;
