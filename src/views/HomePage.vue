@@ -3,7 +3,6 @@
 
   import SocialsSection from "../sections/ContactsSection.vue";
   import ProjectsSection from "../sections/ProjectsSection.vue";
-  import AboutSection from "../sections/AboutSection.vue";
   import SkillsSection from "../sections/SkillsSection.vue";
 
   export default {
@@ -13,7 +12,6 @@
       IntroSection,
       SocialsSection,
       ProjectsSection,
-      AboutSection,
       SkillsSection,
     },
   };
@@ -31,9 +29,6 @@
       class="w-full"
     >
       <ProjectsSection />
-    </div>
-    <div id="about">
-      <AboutSection />
     </div>
     <div>
       <SocialsSection id="socials" />
