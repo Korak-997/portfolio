@@ -44,11 +44,5 @@
     >
       <Icon icon="grommet-icons:contact" />
     </a>
-    <a
-      href="#about"
-      class="hover:text-secondary text-4xl"
-    >
-      <Icon icon="fluent:person-info-20-regular" />
-    </a>
   </div>
 </template>
